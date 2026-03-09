@@ -63,9 +63,6 @@
   },
   "target_mean": 554.9326638166895,
   "target_std": 739.4787889919996,
-  "time_idx_min": 0.0,
-  "time_idx_max": 63154800.0,
-  "time_idx_epoch": "2023-01-01",
   "dropped_columns": [
     "clearsky_dni",
     "clearsky_dhi"
@@ -80,8 +77,7 @@
       "doy_cos",
       "solar_zenith",
       "solar_azimuth",
-      "clearsky_ghi",
-      "time_idx"
+      "clearsky_ghi"
     ],
     "observed": [
       "dewpoint_2m_C",
