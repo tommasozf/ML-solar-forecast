@@ -13,3 +13,6 @@ envs/
 .DS_Store
 .vscode/
 .idea/
+
+# Model checkpoints and training artifacts
+caceres_analysis/models/
