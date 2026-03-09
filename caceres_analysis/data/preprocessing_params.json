@@ -1,0 +1,104 @@
+{
+  "split_boundaries": {
+    "train": [
+      "2023-01-01 00:00:00",
+      "2024-12-31 23:00:00"
+    ],
+    "val": [
+      "2025-01-01 00:00:00",
+      "2025-06-30 23:00:00"
+    ],
+    "test": [
+      "2025-07-01 00:00:00",
+      "2025-12-31 23:00:00"
+    ]
+  },
+  "target_column": "pv_generation_mwh",
+  "features_to_scale": [
+    "dewpoint_2m_C",
+    "temperature_2m_C",
+    "surface_pressure_hPa",
+    "total_precip_mm",
+    "ssrd_wm2",
+    "strd_wm2",
+    "solar_zenith",
+    "solar_azimuth",
+    "clearsky_ghi",
+    "kt",
+    "dewpoint_depression_C"
+  ],
+  "cyclical_features": [
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos",
+    "doy_sin",
+    "doy_cos"
+  ],
+  "train_means": {
+    "dewpoint_2m_C": 8.694986947706736,
+    "temperature_2m_C": 17.282199748802338,
+    "surface_pressure_hPa": 973.1683350432235,
+    "total_precip_mm": 0.07010055247267465,
+    "ssrd_wm2": 201.57232400635093,
+    "strd_wm2": 324.77934516190004,
+    "solar_zenith": 89.69052984788716,
+    "solar_azimuth": 181.10669045716716,
+    "clearsky_ghi": 229.56682623440219,
+    "kt": 0.42563724826180876,
+    "dewpoint_depression_C": 8.587212801095601
+  },
+  "train_stds": {
+    "dewpoint_2m_C": 4.588557555002295,
+    "temperature_2m_C": 8.191168685429508,
+    "surface_pressure_hPa": 6.4267254437688415,
+    "total_precip_mm": 0.27675402648982905,
+    "ssrd_wm2": 282.1352378418317,
+    "strd_wm2": 40.97444731942303,
+    "solar_zenith": 36.304744888216106,
+    "solar_azimuth": 100.67541593611752,
+    "clearsky_ghi": 306.8243071960654,
+    "kt": 0.49826730823142534,
+    "dewpoint_depression_C": 7.291395930777599
+  },
+  "target_mean": 554.9326638166895,
+  "target_std": 739.4787889919996,
+  "time_idx_min": 0.0,
+  "time_idx_max": 63154800.0,
+  "time_idx_epoch": "2023-01-01",
+  "dropped_columns": [
+    "clearsky_dni",
+    "clearsky_dhi"
+  ],
+  "feature_classification": {
+    "known_future": [
+      "hour_sin",
+      "hour_cos",
+      "month_sin",
+      "month_cos",
+      "doy_sin",
+      "doy_cos",
+      "solar_zenith",
+      "solar_azimuth",
+      "clearsky_ghi",
+      "time_idx"
+    ],
+    "observed": [
+      "dewpoint_2m_C",
+      "temperature_2m_C",
+      "surface_pressure_hPa",
+      "total_precip_mm",
+      "ssrd_wm2",
+      "strd_wm2",
+      "kt",
+      "dewpoint_depression_C"
+    ],
+    "target": [
+      "pv_generation_mwh"
+    ]
+  },
+  "night_outlier_params": {
+    "zenith_threshold": 95,
+    "generation_threshold_mwh": 0.1
+  }
+}
