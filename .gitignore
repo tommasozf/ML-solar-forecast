@@ -16,3 +16,5 @@ envs/
 
 # Model checkpoints and training artifacts
 caceres_analysis/models/
+*.ckpt
+lightning_logs/
