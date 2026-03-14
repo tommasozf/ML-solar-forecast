@@ -1,0 +1,683 @@
+plant_id,plant_name,capacity_mw,latitude,longitude,province,start_year,technology_type,tracking_type,tracking_imputed,tilt_deg,azimuth_deg,azimuth_sin,azimuth_cos,pvgis_ok,gem_id
+plant_001,13 Roeles solar farm,14.9,41.3326,-4.9094,Castilla y León,2020.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000827392
+plant_002,Abertura solar farm,23.0,39.2226,-5.7853,Extremadura,2008.0,PV,fixed,True,35.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806742
+plant_003,Abona solar project,17.3,28.1606,-16.4659,Canarias,2017.0,Assumed PV,fixed,True,26.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010605
+plant_004,Agenor solar farm,50.0,36.5207,-6.2794,Andalucía,2024.0,PV,single_axis,True,0.0,4,0.0697564737441253,0.9975640502598242,True,G100000827402
+plant_005,Ager solar project,11.4,38.328,-6.688,Extremadura,2008.0,Assumed PV,fixed,True,33.0,1,0.01745240643728351,0.9998476951563913,True,G100001010483
+plant_006,Agripa solar farm,45.3,39.2774,-6.2734,Extremadura,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827403
+plant_007,Aguasvivas solar farm,55.0,41.1471,-0.8656,Aragón,2024.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001023756
+plant_008,Alarcos solar farm,50.0,38.936,-3.9897,Castilla-La Mancha,2020.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806845
+plant_009,Alaudae solar farm,45.3,39.2774,-6.2734,Extremadura,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827405
+plant_010,Albacete Casa Grande solar project,10.0,39.044,-1.976,Castilla-La Mancha,2008.0,Assumed PV,fixed,True,36.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010462
+plant_011,Albacete Tinajeros solar project,19.1,39.0464,-1.7925,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,36.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010464
+plant_012,Albacete solar project I,16.2,38.9547,-2.0426,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,36.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010814
+plant_013,Albacete solar project XIII,10.1,38.928,-1.9359,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,36.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001061023
+plant_014,Albeniz solar farm,50.0,36.8476,-2.4499,Andalucía,2022.0,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100000827408
+plant_015,Alcalá De Guadaira Solar Park,149.0,37.3563,-5.8171,Andalucía,2020.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806555
+plant_016,Alcalá de los Gazules solar farm,49.9,36.4634,-5.7266,Andalucía,2024.0,PV,single_axis,True,0.0,8,0.13917310096006544,0.9902680687415704,True,G100000827410
+plant_017,Alcalá de los Gazules solar farm,24.0,36.4634,-5.7266,Andalucía,2024.0,PV,single_axis,True,0.0,8,0.13917310096006544,0.9902680687415704,True,G100000827411
+plant_018,Alcaudete solar project,12.6,37.5705,-4.0933,Andalucía,2017.0,Assumed PV,fixed,True,34.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010557
+plant_019,Alcazar solar farm,44.9,39.3882,-3.2117,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827414
+plant_020,Alcazar solar farm,44.9,39.3882,-3.2117,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827415
+plant_021,Alcolea I-II solar project,12.5,37.9186,-4.6728,Andalucía,2017.0,Assumed PV,fixed,True,35.0,2,0.03489949670250097,0.9993908270190958,True,G100001010528
+plant_022,Alconchel solar farm,12.0,39.6196,-2.7904,Extremadura,2024.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827416
+plant_023,Alconchel solar project,10.5,38.5231,-7.0589,Extremadura,2017.0,Assumed PV,fixed,True,34.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010485
+plant_024,Alcores Calaspasol solar farm,39.9,37.4706,-5.647,Andalucía,,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000827417
+plant_025,Alcores solar farm,40.0,37.436,-5.793,Andalucía,2019.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806950
+plant_026,Aldea del Conde solar project,17.1,38.8169,-6.7485,Extremadura,2017.0,Assumed PV,fixed,True,35.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010488
+plant_027,Alfarrasi solar project,11.7,38.9059,-0.5089,Comunidad Valenciana,2017.0,Assumed PV,fixed,True,36.0,0,0.0,1.0,True,G100001010640
+plant_028,Algibicos solar farm,49.0,37.847,-1.118,Región de Murcia,2020.0,PV,single_axis,True,0.0,2,0.03489949670250097,0.9993908270190958,True,G100000806638
+plant_029,Algiedi solar farm,20.6,41.9829,-4.4281,Castilla y León,2022.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827423
+plant_030,Alhendín solar farm,56.0,37.1774,-3.5937,Andalucía,2024.0,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100000827424
+plant_031,Alizarsun solar farm,50.0,41.182,-0.4397,Aragón,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001008894
+plant_032,Almansa (X-Elio) solar farm,50.0,38.83,-1.048,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806634
+plant_033,Almaraz solar farm,42.6,39.7867,-5.7003,Extremadura,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827431
+plant_034,Almaraz solar farm,42.6,39.7867,-5.7003,Extremadura,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827432
+plant_035,Almendralejo solar farm,125.0,38.8695,-6.9791,Extremadura,2023.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001008896
+plant_036,Alten El Casar solar farm,13.0,40.7025,-3.4297,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100000827437
+plant_037,Altiplano solar project IX,11.6,38.6174,-1.3277,Región de Murcia,2023.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001061418
+plant_038,Alto Guadalentín solar project II,14.7,37.5511,-1.7941,Región de Murcia,2021.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001011638
+plant_039,Altos de Libia solar farm,15.0,41.7669,-2.4755,Castilla y León,,PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100000827438
+plant_040,Alvarado solar farm (Spain),50.0,38.8098,-6.7908,Extremadura,2020.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806897
+plant_041,Alvarado solar farm (Spain),50.0,38.8098,-6.7908,Extremadura,2020.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806898
+plant_042,Amazon 1 solar farm,111.0,39.5151,-6.3943,Extremadura,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827442
+plant_043,Amazon Alamo solar farm,100.0,39.9144,-4.0319,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827443
+plant_044,Amazon Antilia solar farm,40.0,41.2244,-3.9954,Castilla y León,2021.0,PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100000827445
+plant_045,Amazon Arco solar farm,137.5,36.6902,-6.1323,Andalucía,2021.0,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100000827446
+plant_046,Amazon Armada solar farm,82.5,40.3386,-3.1914,Comunidad de Madrid,2021.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000827447
+plant_047,Amazon Cabrera solar farm,149.0,37.3817,-5.9804,Andalucía,2020.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000827449
+plant_048,Amazon Hijar 1 solar farm,49.0,41.1757,-0.4536,Aragón,2021.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000827452
+plant_049,Amazon Villanueva solar farm,40.0,39.9467,-2.5984,Castilla-La Mancha,2021.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000827454
+plant_050,Amazon Zaragoza solar farm,50.0,41.6517,-0.7839,Aragón,2021.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806556
+plant_051,Andalusia solar project CLVII,14.5,37.5548,-5.6172,Andalucía,2024.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001060729
+plant_052,Andalusia solar project CLXXVIII,17.2,37.5481,-6.1242,Andalucía,2022.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001060986
+plant_053,Andalusia solar project CVII,16.4,37.5996,-4.6956,Andalucía,2017.0,Assumed PV,fixed,True,34.0,1,0.01745240643728351,0.9998476951563913,True,G100001011531
+plant_054,Andalusia solar project CXI,16.1,37.4444,-3.8897,Andalucía,2021.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001011555
+plant_055,Andalusia solar project CXIX,15.9,37.0687,-2.29,Andalucía,2021.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001011629
+plant_056,Andalusia solar project CXLV,16.0,37.7286,-4.9864,Andalucía,2024.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001060606
+plant_057,Andalusia solar project II,16.6,37.4221,-5.7587,Andalucía,2020.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001010695
+plant_058,Andalusia solar project LXVI,16.5,37.5755,-4.1262,Andalucía,2017.0,Assumed PV,fixed,True,34.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011194
+plant_059,Andalusia solar project LXXIV,13.4,38.3102,-5.2995,Andalucía,2017.0,Assumed PV,fixed,True,35.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011287
+plant_060,Andalusia solar project LXXV,16.8,36.9683,-6.0667,Andalucía,2017.0,Assumed PV,fixed,True,34.0,2,0.03489949670250097,0.9993908270190958,True,G100001011302
+plant_061,Andalusia solar project LXXXIII,15.3,37.5837,-4.6938,Andalucía,2017.0,Assumed PV,fixed,True,34.0,1,0.01745240643728351,0.9998476951563913,True,G100001011357
+plant_062,Andalusia solar project LXXXVII,17.2,37.9993,-4.319,Andalucía,2017.0,Assumed PV,fixed,True,35.0,2,0.03489949670250097,0.9993908270190958,True,G100001011375
+plant_063,Andalusia solar project XCII,13.4,37.2608,-5.8907,Andalucía,2022.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001011496
+plant_064,Andalusia solar project XCIV,10.4,37.3832,-5.8551,Andalucía,2020.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001011498
+plant_065,Andévalo solar farm,50.0,37.6102,-7.2453,Andalucía,2020.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000806761
+plant_066,Antequera solar project II,12.0,37.1366,-4.7023,Andalucía,2017.0,Assumed PV,fixed,True,34.0,0,0.0,1.0,True,G100001010948
+plant_067,Apicio solar farm,50.0,38.1663,-6.6601,Extremadura,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806654
+plant_068,Arbante solar project,11.3,42.4954,-2.3097,Comunidad Foral de Navarra,2017.0,Assumed PV,fixed,True,37.0,0,0.0,1.0,True,G100001010590
+plant_069,Archidona (Encavis) solar farm,56.3,37.095,-4.3815,Andalucía,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827469
+plant_070,Arcicóllar A solar project,17.3,40.0493,-4.0554,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010627
+plant_071,Ardila solar farm,50.0,38.159,-6.5906,Extremadura,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806657
+plant_072,Arenales (Iberdrola) solar farm,150.0,39.4578,-6.4421,Extremadura,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806762
+plant_073,Arenosas solar farm,46.6,36.6061,-5.7988,Andalucía,2022.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000827475
+plant_074,Arericsol 8 solar farm,25.0,38.1678,-6.6534,Extremadura,2023.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001008807
+plant_075,Arico solar project II,11.3,28.1389,-16.4623,Canarias,2017.0,Assumed PV,fixed,True,26.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011186
+plant_076,Arico solar project III,13.0,28.1765,-16.4436,Canarias,2017.0,Assumed PV,fixed,True,26.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011201
+plant_077,Arico solar project IV,17.3,28.1546,-16.4823,Canarias,2023.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011377
+plant_078,Arnedo solar farm,34.0,42.2748,-2.0446,La Rioja,2008.0,PV,fixed,True,37.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000806916
+plant_079,Arroyadas solar farm,33.0,41.523,-4.7768,Castilla y León,2024.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000827477
+plant_080,Augusto solar farm,50.0,38.866,-6.884,Extremadura,2020.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806666
+plant_081,Ayamonte Costa Occidental solar project,17.4,37.2728,-7.3678,Andalucía,2017.0,Assumed PV,fixed,True,34.0,1,0.01745240643728351,0.9998476951563913,True,G100001010916
+plant_082,Azaila solar farm,50.0,41.2598,-0.455,Aragón,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806745
+plant_083,Aznalcóllar solar project,15.0,37.498,-6.231,Andalucía,2008.0,Assumed PV,fixed,True,34.0,0,0.0,1.0,True,G100001010613
+plant_084,Azuer solar farm,47.1,39.0014,-3.3698,Castilla-La Mancha,,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827491
+plant_085,Azuer solar farm,36.3,39.0014,-3.3698,Castilla-La Mancha,,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827492
+plant_086,Badajoz Tierra De Badajoz solar project II,12.0,38.8226,-7.0035,Extremadura,2017.0,Assumed PV,fixed,True,34.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010996
+plant_087,Badajoz Tierra De Badajoz solar project VI,14.9,38.8803,-6.8758,Extremadura,2020.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001011453
+plant_088,Bajo Guadalentín solar project VII,17.9,37.6401,-1.3473,Región de Murcia,2017.0,Assumed PV,fixed,True,35.0,2,0.03489949670250097,0.9993908270190958,True,G100001011657
+plant_089,Bajo Guadalentín solar project VIII,10.3,37.6249,-1.3614,Región de Murcia,2024.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001011885
+plant_090,Bajo Guadalentín solar project XI,10.9,37.7781,-1.431,Región de Murcia,2024.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001060819
+plant_091,Bajo Guadalentín solar project XIV,11.7,37.8561,-1.3867,Región de Murcia,2024.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001061074
+plant_092,Baldio 2 solar farm,19.0,40.2981,-2.0182,Castilla-La Mancha,,PV,single_axis,True,0.0,-7,-0.12186934340514748,0.992546151641322,True,G100000827495
+plant_093,Barbastro Somontano De Barbastro solar project,15.4,42.0022,0.1157,Aragón,2021.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001011806
+plant_094,Barcience solar farm,50.0,39.923,-4.088,Castilla-La Mancha,2021.0,PV,single_axis,True,0.0,-6,-0.10452846326765347,0.9945218953682733,True,G100000806763
+plant_095,Bardenas solar project,10.1,42.271,-1.666,Comunidad Foral de Navarra,2008.0,Assumed PV,fixed,True,37.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010592
+plant_096,Bargas (Castilla-La Mancha) solar farm,50.0,39.9178,-4.1168,Castilla-La Mancha,2020.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806896
+plant_097,Barrica solar farm,49.5,40.9029,-1.2767,Aragón,2022.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000807532
+plant_098,Barrica solar farm,49.5,40.7095,-0.8472,Aragón,2023.0,PV,single_axis,True,0.0,-7,-0.12186934340514748,0.992546151641322,True,G100000807533
+plant_099,Belinchón solar farm,50.0,40.0678,-2.9667,Castilla-La Mancha,,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000827502
+plant_100,Belinchón solar farm,50.0,40.0678,-2.9667,Castilla-La Mancha,,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000827503
+plant_101,Belinchón solar farm,50.0,40.0678,-2.9667,Castilla-La Mancha,,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000827504
+plant_102,Belmez solar project,15.7,38.2811,-5.2393,Andalucía,2017.0,Assumed PV,fixed,True,34.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010531
+plant_103,Belvis solar farm,45.5,39.7982,-5.6754,Extremadura,2025.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827505
+plant_104,Belvis solar farm,45.5,39.7982,-5.6754,Extremadura,2025.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827506
+plant_105,Benahadux solar project,10.6,36.9268,-2.4758,Andalucía,2008.0,Assumed PV,fixed,True,34.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010477
+plant_106,Betierra solar farm,50.0,40.0484,-3.058,Castilla-La Mancha,2024.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001006525
+plant_107,Betierra solar farm,50.0,40.0484,-3.058,Castilla-La Mancha,2024.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001006526
+plant_108,Betierra solar farm,50.0,40.0484,-3.058,Castilla-La Mancha,2024.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001006527
+plant_109,Beturia solar farm,50.0,38.159,-6.5906,Extremadura,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806655
+plant_110,Bienvenida solar farm,180.0,38.283,-6.161,Extremadura,2021.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806738
+plant_111,Biniatria solar farm,12.6,39.8094,3.0818,Islas Baleares,,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000827512
+plant_112,Bolarque solar farm,50.0,40.3336,-2.6302,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000827515
+plant_113,Bonete solar farm,49.9,38.8559,-1.303,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827516
+plant_114,Bonete solar farm,46.4,38.8379,-1.3087,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827517
+plant_115,Bonete solar farm,44.4,38.8443,-1.312,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827518
+plant_116,Brazoinves I solar farm,30.0,38.6576,-4.2581,Castilla-La Mancha,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001071476
+plant_117,Budweiser solar farm,74.0,39.3261,-4.838,Extremadura,,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000806572
+plant_118,Budweiser solar farm,74.0,39.3261,-4.838,Extremadura,,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000806573
+plant_119,CFS Alarcos solar farm,49.9,38.8571,-4.0814,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827600
+plant_120,CSF Carril XE solar farm,43.9,38.0657,-1.667,Región de Murcia,,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001008901
+plant_121,CSF Continua Anguita solar farm,93.0,41.0273,-2.37,Castilla-La Mancha,2021.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827635
+plant_122,Cadima solar farm,40.0,36.986,-2.043,Andalucía,2019.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000806635
+plant_123,Calamocha 2 solar farm,49.5,41.2594,-0.5386,Aragón,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001000889
+plant_124,Calasparra solar farm,22.3,38.2635,-1.6817,Región de Murcia,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001008898
+plant_125,Calatayud I solar farm,49.5,41.5215,-1.2525,Aragón,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001072788
+plant_126,Calatrava 1 solar farm,22.3,38.9935,-3.3951,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000827529
+plant_127,Calatrava 2 solar farm,50.0,38.877,-3.8675,Castilla-La Mancha,2024.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001006836
+plant_128,Calaveron Solar solar farm,21.0,39.3269,-2.5292,Castilla-La Mancha,2008.0,PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806633
+plant_129,Calera y Chozas solar project,16.2,39.932,-4.965,Castilla-La Mancha,2021.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010460
+plant_130,Calzada de Calatrava solar project,10.0,38.7071,-3.72,Castilla-La Mancha,2008.0,Assumed PV,fixed,True,35.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010522
+plant_131,Campanario (Elawan) solar farm,39.7,38.8465,-1.3001,Castilla-La Mancha,2020.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827533
+plant_132,Campanario (Elawan) solar farm,48.1,38.901,-1.3291,Castilla-La Mancha,2021.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827534
+plant_133,Campanario (Elawan) solar farm,48.1,38.931,-1.3078,Castilla-La Mancha,2021.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827535
+plant_134,Campanario (Elawan) solar farm,50.0,38.9094,-1.3366,Castilla-La Mancha,2021.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827536
+plant_135,Campanario (Elawan) solar farm,50.0,38.9103,-1.3199,Castilla-La Mancha,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827537
+plant_136,Campanario (Planea Energia) solar farm,80.0,38.8713,-1.3466,Castilla-La Mancha,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001008759
+plant_137,Campina Cordobesa Dos solar farm,11.3,37.3917,-4.7659,Andalucía,2022.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000827538
+plant_138,Campiña De Jerez solar project,13.7,36.5817,-5.8457,Andalucía,2023.0,Assumed PV,single_axis,True,0.0,2,0.03489949670250097,0.9993908270190958,True,G100001061271
+plant_139,Campo Arañuelo solar farm,50.0,39.8161,-5.6831,Extremadura,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806746
+plant_140,Campo Arañuelo solar farm,50.0,39.8161,-5.6831,Extremadura,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806747
+plant_141,Campo Arañuelo solar farm,40.0,39.7865,-5.7008,Extremadura,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806749
+plant_142,Campo De Cartagena Y Mar Menor solar project VII,10.4,37.7204,-1.1272,Región de Murcia,2019.0,Assumed PV,single_axis,True,0.0,4,0.0697564737441253,0.9975640502598242,True,G100001011776
+plant_143,Campo De Cartagena Y Mar Menor solar project VIII,14.7,37.734,-0.8889,Región de Murcia,2020.0,Assumed PV,single_axis,True,0.0,5,0.08715574274765817,0.9961946980917455,True,G100001011799
+plant_144,Campo De Gibraltar solar project,17.1,36.1934,-5.4187,Andalucía,2017.0,Assumed PV,fixed,True,31.0,9,0.15643446504023087,0.9876883405951378,True,G100001010788
+plant_145,Campos del Rio solar project,10.0,38.06,-1.341,Región de Murcia,2022.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001010571
+plant_146,Canarias solar project XI,11.1,28.5133,-13.8826,Canarias,2023.0,Assumed PV,single_axis,True,0.0,7,0.12186934340514748,0.992546151641322,True,G100001061102
+plant_147,Canarias solar project XIV,11.8,27.8906,-15.4117,Canarias,2022.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001061292
+plant_148,Canarias solar project XVI,13.6,28.5186,-13.854,Canarias,2024.0,Assumed PV,single_axis,True,0.0,7,0.12186934340514748,0.992546151641322,True,G100001061320
+plant_149,Canredondo solar farm,22.0,40.6345,-3.1744,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100000827552
+plant_150,Cantillana solar project,10.5,37.5896,-5.8166,Andalucía,2017.0,Assumed PV,fixed,True,34.0,1,0.01745240643728351,0.9998476951563913,True,G100001010614
+plant_151,Cantoria II solar project,12.6,37.375,-2.244,Andalucía,2023.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010478
+plant_152,Capricornius solar farm,25.0,41.9813,-4.4237,Castilla y León,2021.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806875
+plant_153,Carmonita Ministerio solar farm,159.0,39.1365,-6.3406,Extremadura,2024.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000827561
+plant_154,Carmonita Ministerio solar farm,159.0,39.1365,-6.3406,Extremadura,2024.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001006156
+plant_155,Carmonita Ministerio solar farm,159.0,39.1365,-6.3406,Extremadura,2024.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001006157
+plant_156,Carmonita Norte solar farm,46.0,39.1439,-6.2788,Extremadura,2024.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000827562
+plant_157,Carmonita Norte solar farm,46.0,39.1439,-6.2788,Extremadura,2024.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001006141
+plant_158,Carmonita Norte solar farm,23.0,39.1439,-6.2788,Extremadura,2024.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001006142
+plant_159,Carmonita Sur solar farm,35.0,39.1357,-6.3205,Extremadura,2024.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000827563
+plant_160,Carmonita Sur solar farm,35.0,39.1357,-6.3205,Extremadura,2024.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001006159
+plant_161,Carmonita Sur solar farm,35.0,39.1357,-6.3205,Extremadura,2024.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001006160
+plant_162,Carolinas I solar project,18.1,40.7102,-3.4046,Castilla-La Mancha,2019.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010551
+plant_163,Carpio de Tajo solar farm,50.0,39.8457,-4.5275,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,-6,-0.10452846326765347,0.9945218953682733,True,G100000806792
+plant_164,Cartago A1 solar farm,52.7,37.4583,-5.6408,Andalucía,2023.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001006146
+plant_165,Cartago A1 solar farm,52.7,37.4583,-5.6408,Andalucía,2023.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000827567
+plant_166,Cartago A1 solar farm,52.7,37.4583,-5.6408,Andalucía,2023.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001006144
+plant_167,Cartago A1 solar farm,52.7,37.4583,-5.6408,Andalucía,2023.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001006145
+plant_168,Cartago A1 solar farm,52.7,37.4583,-5.6408,Andalucía,2023.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000827568
+plant_169,Cartuja solar farm,46.8,36.5806,-6.1079,Andalucía,2021.0,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100000827569
+plant_170,Casa Valdes solar farm,44.0,40.541,-3.1913,Castilla-La Mancha,2023.0,PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100000827572
+plant_171,Casas De Los Pinos solar farm,28.0,39.275,-2.4095,Castilla-La Mancha,2008.0,PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000807701
+plant_172,Casas de Don Pedro solar project,16.5,39.1157,-5.3346,Extremadura,2023.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001010489
+plant_173,Casatejada solar project,11.4,39.883,-5.667,Extremadura,2009.0,Assumed PV,fixed,True,35.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010507
+plant_174,Casetona solar farm,27.7,42.1523,-4.1422,Castilla y León,,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001005272
+plant_175,Castano solar farm,134.0,40.9113,-4.2466,Castilla y León,2025.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001008888
+plant_176,Castilblanco solar farm,42.9,39.2857,-5.0957,Extremadura,2019.0,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100000827576
+plant_177,Castile And León solar project CCCXLI,10.9,42.0105,-3.267,Castilla y León,2024.0,Assumed PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100001061572
+plant_178,Castile And León solar project CI,10.9,40.9122,-5.6287,Castilla y León,2023.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011383
+plant_179,Castile And León solar project CLII,14.5,41.8602,-5.0263,Castilla y León,2022.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011842
+plant_180,Castile And León solar project CLXXXVIII,11.5,42.3256,-3.6014,Castilla y León,2024.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001060680
+plant_181,Castile And León solar project CVI,17.3,41.4664,-5.82,Castilla y León,2017.0,Assumed PV,fixed,True,36.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011403
+plant_182,Castile And León solar project CXLIX,12.6,41.6083,-2.5041,Castilla y León,2022.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001011813
+plant_183,Castile And León solar project CXXI,17.0,41.4443,-5.4317,Castilla y León,2022.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011537
+plant_184,Castile And León solar project CXXXIV,10.8,41.9245,-4.4112,Castilla y León,2021.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011583
+plant_185,Castile And León solar project L,12.1,41.7105,-4.8902,Castilla y León,2017.0,Assumed PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011046
+plant_186,Castile And León solar project LXIII,15.6,41.5303,-5.532,Castilla y León,2023.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011116
+plant_187,Castile And León solar project LXIX,17.7,41.5156,-5.622,Castilla y León,2017.0,Assumed PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011158
+plant_188,Castile And León solar project LXXVII,10.1,40.9344,-4.9703,Castilla y León,2017.0,Assumed PV,fixed,True,38.0,0,0.0,1.0,True,G100001011212
+plant_189,Castile And León solar project LXXVIII,10.7,41.3741,-5.6875,Castilla y León,2017.0,Assumed PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011214
+plant_190,Castile And León solar project LXXXVI,12.2,41.7968,-4.9663,Castilla y León,2023.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011265
+plant_191,Castile And León solar project XC,11.1,41.8745,-5.4393,Castilla y León,2017.0,Assumed PV,fixed,True,36.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011293
+plant_192,Castile And León solar project XCIII,18.3,41.3821,-5.2795,Castilla y León,2017.0,Assumed PV,fixed,True,36.0,-8,-0.13917310096006544,0.9902680687415704,True,G100001011304
+plant_193,Castile-La Mancha solar project CCCLIII,13.5,38.8889,-1.3227,Castilla-La Mancha,2023.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001061154
+plant_194,Castile-La Mancha solar project CCCLXIV,12.8,39.9637,-3.5683,Castilla-La Mancha,2024.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001061234
+plant_195,Castile-La Mancha solar project CCCLXXXII,19.1,39.9574,-3.5521,Castilla-La Mancha,2024.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001061340
+plant_196,Castile-La Mancha solar project CCCLXXXVIII,14.9,40.6378,-3.2892,Castilla-La Mancha,2023.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001061388
+plant_197,Castile-La Mancha solar project CCCXXXI,15.6,40.0126,-4.8063,Castilla-La Mancha,2021.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001060956
+plant_198,Castile-La Mancha solar project CCCXXXIX,14.0,38.622,-4.0165,Castilla-La Mancha,2023.0,Assumed PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100001061065
+plant_199,Castile-La Mancha solar project CCLIV,14.6,38.7556,-1.5765,Castilla-La Mancha,2023.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011814
+plant_200,Castile-La Mancha solar project CCLVII,11.5,38.3177,-1.8777,Castilla-La Mancha,2020.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001011818
+plant_201,Castile-La Mancha solar project CCLXX,14.2,39.7336,-4.1,Castilla-La Mancha,2023.0,Assumed PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100001011901
+plant_202,Castile-La Mancha solar project CCLXXIII,17.6,39.9461,-2.6311,Castilla-La Mancha,2021.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011910
+plant_203,Castile-La Mancha solar project CCXCIX,15.5,39.564,-1.6331,Castilla-La Mancha,2024.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001060790
+plant_204,Castile-La Mancha solar project CCXCVI,18.5,38.7034,-4.2166,Castilla-La Mancha,2024.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001060762
+plant_205,Castile-La Mancha solar project CCXXVIII,19.9,39.961,-2.6187,Castilla-La Mancha,2023.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001011618
+plant_206,Castile-La Mancha solar project CDXIV,15.8,38.8823,-1.3325,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,36.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001061561
+plant_207,Castile-La Mancha solar project CIII,13.2,39.1082,-1.476,Castilla-La Mancha,2023.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001011094
+plant_208,Castile-La Mancha solar project CIV,12.2,39.4397,-1.7067,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,36.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001011097
+plant_209,Castile-La Mancha solar project CLXXIII,19.1,38.7416,-3.7667,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,35.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001011410
+plant_210,Castile-La Mancha solar project CXCI,16.6,40.0665,-4.1284,Castilla-La Mancha,2021.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001011570
+plant_211,Castile-La Mancha solar project LXV,13.8,38.8879,-2.0619,Castilla-La Mancha,2023.0,Assumed PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100001010928
+plant_212,Castile-La Mancha solar project LXXV,12.7,40.7346,-3.0621,Castilla-La Mancha,2019.0,Assumed PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100001010987
+plant_213,Castile-La Mancha solar project XLV,10.9,38.8449,-1.0494,Castilla-La Mancha,2023.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010815
+plant_214,Castile-La Mancha solar project XLVII,15.4,40.7427,-3.0515,Castilla-La Mancha,2021.0,Assumed PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100001010819
+plant_215,Castile-La Mancha solar project XXX,12.6,39.6391,-2.0965,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010759
+plant_216,Castile-La Mancha solar project XXXVII,14.3,39.4946,-3.5342,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,36.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010781
+plant_217,Castuera solar project,18.1,38.7465,-5.5313,Extremadura,2023.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010490
+plant_218,Ceclavín solar farm,328.0,39.8201,-6.7798,Extremadura,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806748
+plant_219,Centurión solar farm,116.5,38.1365,-6.5145,Extremadura,,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827593
+plant_220,Cepheus solar farm,30.4,41.0528,-0.1415,Aragón,2021.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827594
+plant_221,Cerrado Cabrera solar farm,50.0,37.2507,-5.6827,Andalucía,2020.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806857
+plant_222,Cespedera solar farm,27.0,36.52,-6.2808,Andalucía,,PV,single_axis,True,0.0,4,0.0697564737441253,0.9975640502598242,True,G100000827599
+plant_223,Chiprana solar farm,200.0,41.262,-0.1266,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001008815
+plant_224,Cifuentes-Trillo solar farm,626.0,40.709,-2.6312,Castilla-La Mancha,2023.0,PV,single_axis,True,0.0,-8,-0.13917310096006544,0.9902680687415704,True,G100000827606
+plant_225,Cincinato solar farm,50.0,38.1694,-6.5588,Extremadura,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806658
+plant_226,Cinco Villas solar project I,12.7,42.1152,-1.2248,Aragón,2021.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010730
+plant_227,Cinco Villas solar project VIII,13.4,42.106,-1.1395,Aragón,2017.0,Assumed PV,fixed,True,38.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011800
+plant_228,Ciudad Real solar project,17.3,38.9423,-3.9508,Castilla-La Mancha,2022.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011927
+plant_229,Colmenar De Oreja solar project,13.8,40.0917,-3.5464,Comunidad de Madrid,2023.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001061432
+plant_230,Comarca De Alhama solar project I,17.3,37.0729,-3.7871,Andalucía,2023.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001010706
+plant_231,Comarca De Alhama solar project VII,16.9,37.0474,-3.7727,Andalucía,2017.0,Assumed PV,fixed,True,33.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010935
+plant_232,Comarca De La Vega De Granada solar project XIII,14.4,37.2662,-3.7824,Andalucía,2023.0,Assumed PV,single_axis,True,0.0,4,0.0697564737441253,0.9975640502598242,True,G100001011898
+plant_233,Comarca De Loja solar project III,15.3,37.3055,-3.7124,Andalucía,2017.0,Assumed PV,fixed,True,35.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011132
+plant_234,Comarca Metropolitana De Huelva solar project I,12.9,37.376,-6.8842,Andalucía,2017.0,Assumed PV,fixed,True,34.0,1,0.01745240643728351,0.9998476951563913,True,G100001011063
+plant_235,Comarca Metropolitana De Huelva solar project VII,11.9,37.343,-6.8583,Andalucía,2023.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001011440
+plant_236,Comarca Metropolitana De Huelva solar project XIV,10.7,37.2937,-6.8137,Andalucía,2023.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001011827
+plant_237,Comunidad De Calatayud solar project III,14.3,41.3945,-1.7776,Aragón,2024.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001061214
+plant_238,Constanti 42 solar farm,14.5,41.3936,2.0757,Cataluña,2023.0,PV,single_axis,True,0.0,2,0.03489949670250097,0.9993908270190958,True,G100000827617
+plant_239,Corella solar project,10.8,42.1194,-1.7154,Comunidad Foral de Navarra,2008.0,Assumed PV,fixed,True,37.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010594
+plant_240,Cortijo Viejo solar project,10.0,37.641,-4.584,Andalucía,2008.0,Assumed PV,fixed,True,34.0,1,0.01745240643728351,0.9998476951563913,True,G100001010532
+plant_241,Cosentino solar farm,20.0,37.3663,-2.2425,Andalucía,2022.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827625
+plant_242,Costa Occidental solar project IV,13.6,37.3207,-7.325,Andalucía,2017.0,Assumed PV,fixed,True,34.0,0,0.0,1.0,True,G100001061530
+plant_243,Crisnova solar project,12.1,38.708,-0.951,Castilla-La Mancha,2022.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010467
+plant_244,Cuenca Minera solar project,18.5,37.7148,-6.5755,Andalucía,2024.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001061563
+plant_245,Cáceres solar project,19.8,39.4631,-6.308,Extremadura,2023.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010505
+plant_246,Córdoba solar project II,10.9,37.9464,-4.5901,Andalucía,2017.0,Assumed PV,fixed,True,35.0,2,0.03489949670250097,0.9993908270190958,True,G100001011422
+plant_247,Daimiel solar project,19.9,38.9943,-3.5712,Castilla-La Mancha,2023.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010523
+plant_248,Darro Epuron solar project,13.7,37.3482,-3.2702,Andalucía,2017.0,Assumed PV,fixed,True,35.0,-7,-0.12186934340514748,0.992546151641322,True,G100001010546
+plant_249,Desafio solar farm,50.0,41.3389,-0.5935,Aragón,,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001008905
+plant_250,Don Quijote solar farm,15.3,39.6111,-2.8124,Castilla-La Mancha,2008.0,PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827644
+plant_251,Don Quijote solar project,17.8,39.8934,-5.3172,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010628
+plant_252,Don Rodrigo solar farm,175.0,37.2209,-5.8679,Andalucía,2018.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806577
+plant_253,Don Rodrigo solar farm,50.0,37.2209,-5.8679,Andalucía,2020.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806579
+plant_254,Draco solar farm (Spain),45.6,41.5267,-5.391,Castilla y León,2022.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827645
+plant_255,Dulcinea Solar solar farm,30.0,39.6561,-2.8036,Castilla-La Mancha,2008.0,PV,fixed,True,36.0,-7,-0.12186934340514748,0.992546151641322,True,G100000806570
+plant_256,Dulcinea solar farm,95.2,37.5041,-5.7135,Andalucía,2023.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000827647
+plant_257,EGA solar farm,30.0,37.0785,-2.3081,Andalucía,2022.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000827650
+plant_258,EKIAN (EVE) solar farm,12.0,42.7024,-2.8968,País Vasco,2020.0,PV,single_axis,True,0.0,7,0.12186934340514748,0.992546151641322,True,G100000827651
+plant_259,EKIAN (EVE) solar farm,12.0,42.7024,-2.8968,País Vasco,2020.0,PV,single_axis,True,0.0,7,0.12186934340514748,0.992546151641322,True,G100000827652
+plant_260,Ebro I solar farm,52.9,42.1296,-1.6796,Comunidad Foral de Navarra,2025.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001072810
+plant_261,El Aliagar 2 solar farm,46.7,41.8318,-0.7644,Aragón,,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827654
+plant_262,El Andévalo solar project XI,12.4,37.6407,-6.878,Andalucía,2025.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001061000
+plant_263,El Baldío solar farm,20.0,39.9646,-5.6986,Extremadura,2019.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806868
+plant_264,El Berrocal solar farm,50.0,37.5465,-6.161,Andalucía,,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001008706
+plant_265,El Bonal solar farm,80.0,38.6418,-3.9575,Castilla-La Mancha,2020.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000806832
+plant_266,El Bonillo solar farm,20.0,38.9167,-2.5505,Castilla-La Mancha,2008.0,PV,fixed,True,35.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000806547
+plant_267,El Condado solar project III,10.6,37.2766,-6.5701,Andalucía,2024.0,Assumed PV,single_axis,True,0.0,2,0.03489949670250097,0.9993908270190958,True,G100001011109
+plant_268,El Condado solar project V,14.3,37.3983,-6.4255,Andalucía,2024.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001011354
+plant_269,El Condado solar project XV,14.6,37.1628,-6.5169,Andalucía,2017.0,Assumed PV,fixed,True,34.0,2,0.03489949670250097,0.9993908270190958,True,G100001060666
+plant_270,El Condado solar project XVI,16.8,37.3568,-6.3731,Andalucía,2024.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001060694
+plant_271,El Condado solar project XXII,19.3,37.3789,-6.5191,Andalucía,2024.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001061293
+plant_272,El Corchito solar farm,25.0,38.3328,-6.7023,Extremadura,2025.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001072679
+plant_273,El Coronil solar farm,10.0,37.0936,-5.6308,Andalucía,2014.0,PV,fixed,True,34.0,1,0.01745240643728351,0.9998476951563913,True,G100000827660
+plant_274,El Coronil solar farm,10.0,37.0936,-5.6308,Andalucía,2014.0,PV,fixed,True,34.0,1,0.01745240643728351,0.9998476951563913,True,G100000827661
+plant_275,El Cuervo Chico solar farm,20.0,36.8361,-6.0696,Andalucía,,Assumed PV,single_axis,True,0.0,2,0.03489949670250097,0.9993908270190958,True,G100001008907
+plant_276,El Doblón solar farm,50.0,38.7574,-6.3997,Extremadura,,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806661
+plant_277,El Encinar I solar farm,41.7,38.7653,-6.581,Extremadura,2025.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827662
+plant_278,El Muelle solar farm,11.0,41.4672,-1.0858,Aragón,,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827665
+plant_279,El Primo Aleman solar farm,50.0,37.2507,-5.6827,Andalucía,2020.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806858
+plant_280,El Rancho solar farm,44.5,36.6876,-6.0216,Andalucía,2024.0,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100001072795
+plant_281,El Realengo solar project,13.2,38.1995,-0.8,Comunidad Valenciana,2008.0,Assumed PV,fixed,True,36.0,1,0.01745240643728351,0.9998476951563913,True,G100001010476
+plant_282,El Robledo solar farm,49.8,41.2617,-0.1265,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827668
+plant_283,El Rocío solar farm,52.0,37.0765,-6.5397,Andalucía,2023.0,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100000806841
+plant_284,El Rocío solar farm,52.0,37.0765,-6.5397,Andalucía,2023.0,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100000806842
+plant_285,El Rocío solar farm,24.0,37.0765,-6.5397,Andalucía,2023.0,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100000806843
+plant_286,El Romeral solar farm,42.0,39.5687,-2.0884,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806755
+plant_287,El Salobral solar farm,45.0,37.6832,-4.5629,Andalucía,2020.0,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100000807571
+plant_288,El Tomillar solar farm,16.0,38.9207,-1.7257,Castilla-La Mancha,2023.0,PV,single_axis,True,0.0,-7,-0.12186934340514748,0.992546151641322,True,G100000827670
+plant_289,El Tomillar solar project,14.0,38.97,-1.772,Castilla-La Mancha,2023.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010468
+plant_290,El Yarte solar farm,46.6,36.6061,-5.7988,Andalucía,2022.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000827672
+plant_291,Elduayen solar farm,11.4,38.9122,-6.2193,Extremadura,2008.0,PV,fixed,True,34.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827681
+plant_292,Emoción solar farm,49.8,41.2874,-0.324,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827683
+plant_293,Encina del Sol solar farm,35.8,38.6632,-4.1675,Castilla-La Mancha,2024.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000827684
+plant_294,Envitero solar farm,45.6,41.2874,-0.324,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827690
+plant_295,Erribera / Ribera solar project I,14.4,41.9829,-1.5713,Comunidad Foral de Navarra,2023.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010801
+plant_296,Erribera / Ribera solar project XII,14.4,42.0573,-1.6769,Comunidad Foral de Navarra,2017.0,Assumed PV,fixed,True,37.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001061008
+plant_297,Erribera / Ribera solar project XIII,11.5,42.1247,-1.8358,Comunidad Foral de Navarra,2023.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001061067
+plant_298,Erribera / Ribera solar project XVIII,15.2,42.1144,-1.6825,Comunidad Foral de Navarra,2025.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001061569
+plant_299,Escarnes solar farm,40.1,41.2874,-0.324,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827692
+plant_300,Escatrón Dos solar farm,49.8,41.2874,-0.324,Aragón,2019.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827693
+plant_301,Escucha 2 solar farm,49.5,41.2693,-0.5396,Aragón,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827696
+plant_302,Esparragal solar farm,50.0,37.5499,-6.0947,Andalucía,2022.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000827700
+plant_303,Esplendor solar farm,49.8,41.1891,-0.3858,Aragón,2019.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827702
+plant_304,Estrella Solar PV solar farm,35.8,38.6813,-4.1716,Castilla-La Mancha,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827703
+plant_305,Euder solar farm,43.0,39.2441,-5.2922,Extremadura,2019.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806652
+plant_306,Euder solar farm,43.0,39.2441,-5.2922,Extremadura,2019.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806653
+plant_307,Euder solar farm,43.0,39.2441,-5.2922,Extremadura,2019.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806651
+plant_308,Extremadura solar farm,41.6,38.749,-6.4885,Extremadura,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827705
+plant_309,Extremadura solar farm,41.6,38.7363,-6.4982,Extremadura,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827706
+plant_310,Extremadura solar farm,41.6,38.7522,-6.4829,Extremadura,2023.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827707
+plant_311,Extremadura solar project CV,17.9,39.957,-5.755,Extremadura,2021.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001061255
+plant_312,Extremadura solar project LIX,13.8,40.0033,-5.3768,Extremadura,2023.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001011520
+plant_313,Extremadura solar project LV,15.9,39.996,-6.1418,Extremadura,2021.0,Assumed PV,single_axis,True,0.0,-7,-0.12186934340514748,0.992546151641322,True,G100001011504
+plant_314,Extremadura solar project LVII,17.3,39.3243,-6.1418,Extremadura,2021.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011514
+plant_315,Extremadura solar project LXI,16.5,38.6647,-6.2631,Extremadura,2017.0,Assumed PV,fixed,True,35.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011716
+plant_316,Extremadura solar project LXIII,18.5,39.8798,-5.6702,Extremadura,2017.0,Assumed PV,fixed,True,35.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001011737
+plant_317,Extremadura solar project LXXV,12.5,39.7846,-5.7154,Extremadura,2020.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001060579
+plant_318,Extremadura solar project XIII,19.1,38.7938,-6.3327,Extremadura,2017.0,Assumed PV,fixed,True,35.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010796
+plant_319,Extremadura solar project XIX,15.4,38.8927,-6.267,Extremadura,2017.0,Assumed PV,fixed,True,34.0,0,0.0,1.0,True,G100001010870
+plant_320,Extremadura solar project XLIII,14.8,39.9945,-6.2556,Extremadura,2017.0,Assumed PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011364
+plant_321,Extremadura solar project XLV,10.9,39.967,-6.2791,Extremadura,2017.0,Assumed PV,fixed,True,35.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011376
+plant_322,Extremadura solar project XLVII,19.4,38.8293,-6.5916,Extremadura,2022.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011434
+plant_323,Extremadura solar project XV,12.2,39.0488,-5.2123,Extremadura,2017.0,Assumed PV,fixed,True,35.0,0,0.0,1.0,True,G100001010837
+plant_324,Extremadura solar project XXIV,10.2,39.8312,-5.6147,Extremadura,2017.0,Assumed PV,fixed,True,35.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010951
+plant_325,Extremadura solar project XXXVIII,18.0,39.3354,-5.3513,Extremadura,2023.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001011260
+plant_326,Extremasol solar project,10.0,38.846,-6.431,Extremadura,2008.0,Assumed PV,fixed,True,35.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010491
+plant_327,Fontellas solar project,17.0,41.9914,-1.5683,Comunidad Foral de Navarra,2017.0,Assumed PV,fixed,True,38.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010595
+plant_328,Fontiveros solar project,10.0,40.9178,-4.97,Castilla y León,2008.0,Assumed PV,fixed,True,37.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010481
+plant_329,Fotosfera solar farm,42.3,37.1766,-2.9497,Andalucía,2022.0,PV,single_axis,True,0.0,-9,-0.15643446504023087,0.9876883405951378,True,G100000827716
+plant_330,Fraile solar farm,36.0,38.7827,-5.4962,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827717
+plant_331,Francisco Pizarro solar farm,553.0,39.5731,-5.7051,Extremadura,2022.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000806751
+plant_332,Fuenmayor solar project,13.2,42.4699,-2.6086,La Rioja,2023.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010560
+plant_333,Fuente de Cantos A solar project,15.5,38.2598,-6.3,Extremadura,2017.0,Assumed PV,fixed,True,35.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010492
+plant_334,Fuente Álamo III solar project,10.3,37.69,-1.162,Región de Murcia,2008.0,Assumed PV,fixed,True,35.0,5,0.08715574274765817,0.9961946980917455,True,G100001010576
+plant_335,Fuentes de Ebro solar farm,40.0,41.6547,-0.9125,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001008771
+plant_336,Fuentes solar farm,50.0,39.9442,-2.0069,Castilla-La Mancha,,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000827721
+plant_337,Fundici solar farm,55.0,37.559,-6.0215,Andalucía,2025.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001072813
+plant_338,Fustiñana III solar project,15.7,42.031,-1.4781,Comunidad Foral de Navarra,2017.0,Assumed PV,fixed,True,38.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010596
+plant_339,Galisteo solar farm,41.9,40.0651,-6.2734,Extremadura,,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827724
+plant_340,Gamonarejo 36 solar farm,50.0,37.8074,-5.1006,Andalucía,2019.0,PV,single_axis,True,0.0,2,0.03489949670250097,0.9993908270190958,True,G100000806647
+plant_341,Garnacha (ERG) solar farm,127.5,41.4712,-5.3579,Castilla y León,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827729
+plant_342,Gazules solar farm,46.0,36.4637,-5.7252,Andalucía,2023.0,PV,single_axis,True,0.0,4,0.0697564737441253,0.9975640502598242,True,G100000827732
+plant_343,Gazules solar farm,46.0,36.4637,-5.7252,Andalucía,2023.0,PV,single_axis,True,0.0,4,0.0697564737441253,0.9975640502598242,True,G100000827733
+plant_344,Gemina solar farm,45.3,39.2774,-6.2734,Extremadura,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827736
+plant_345,General Motors Zaragoza solar farm,10.0,41.742,-1.1876,Aragón,2008.0,PV,fixed,True,38.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827737
+plant_346,Geria solar project,16.3,41.5631,-4.9031,Castilla y León,2019.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010645
+plant_347,Gnowee solar farm,100.0,39.4218,-6.3283,Extremadura,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827739
+plant_348,Grijota solar farm,51.9,42.1023,-4.5713,Castilla y León,2025.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001005287
+plant_349,Grijota solar farm,52.9,42.1091,-4.5578,Castilla y León,2025.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001005305
+plant_350,Grullas solar farm,62.0,37.726,-5.434,Andalucía,2019.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806899
+plant_351,Grullas-Peñaflor solar farm,30.9,37.6568,-5.5269,Andalucía,2019.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000827749
+plant_352,Guadacano solar farm,62.0,37.113,-4.4959,Andalucía,2024.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001072815
+plant_353,Guadalajara solar project,11.0,40.6663,-3.1567,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,37.0,-5,-0.08715574274765817,0.9961946980917455,True,G100001011736
+plant_354,Guadalteba solar project IV,16.6,37.0029,-4.9582,Andalucía,2020.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001011516
+plant_355,Guillena (AER) solar farm,50.0,37.5446,-6.0571,Andalucía,,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001006841
+plant_356,Hazas de las Sesenta solar farm,50.0,37.2507,-5.6827,Andalucía,2020.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806859
+plant_357,Hazaña solar farm,49.8,41.1891,-0.3858,Aragón,2019.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827765
+plant_358,Hijar 1 solar farm,49.5,41.2611,-0.5183,Aragón,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827795
+plant_359,Hinojos solar project,13.0,37.2681,-6.4158,Andalucía,2017.0,Assumed PV,fixed,True,34.0,1,0.01745240643728351,0.9998476951563913,True,G100001010554
+plant_360,Hinojosa solar farm,21.9,38.4836,-6.1855,Extremadura,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827796
+plant_361,Hornachos solar farm,24.0,38.577,-6.1131,Extremadura,,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827798
+plant_362,Hoya De Huesca / Plana De Uesca solar project IV,14.2,42.1939,-0.5907,Aragón,2023.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001011693
+plant_363,Hoya De Los Vicentes solar farm,23.0,38.3641,-1.2765,Región de Murcia,2007.0,PV,fixed,True,36.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806640
+plant_364,Huelva Comarca Metropolitana De Huelva solar project I,13.0,37.3281,-6.9276,Andalucía,2021.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001010824
+plant_365,Huelva solar farm,50.0,37.361,-6.924,Andalucía,2020.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806553
+plant_366,Huelva solar farm,50.0,37.3483,-6.9206,Andalucía,2021.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806554
+plant_367,Huerta Solar Almaraz solar farm,22.0,39.8358,-5.6604,Extremadura,2008.0,PV,fixed,True,35.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000807950
+plant_368,Huévar del Aljarafe solar farm,36.0,37.3543,-6.2644,Andalucía,2024.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001003653
+plant_369,Huévar del Aljarafe solar farm,36.0,37.3543,-6.2644,Andalucía,2024.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001003655
+plant_370,Iberelectrica 1 solar farm,22.3,38.9935,-3.3951,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000827802
+plant_371,Ictio Alcazar solar farm,47.1,39.3882,-3.2117,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827806
+plant_372,Ictio Alcazar solar farm,47.1,39.3882,-3.2117,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827808
+plant_373,Ictio Manzanares solar farm,35.0,39.0146,-3.3721,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827809
+plant_374,Ignis Solar 1 solar farm,49.8,41.2874,-0.324,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827811
+plant_375,Isla Mayor solar project,10.3,37.1489,-6.1452,Andalucía,2017.0,Assumed PV,fixed,True,34.0,2,0.03489949670250097,0.9993908270190958,True,G100001010617
+plant_376,Jaén (Aquila Clean Energy) solar farm,50.0,37.7798,-3.7883,Andalucía,,PV,single_axis,True,0.0,-6,-0.10452846326765347,0.9945218953682733,True,G100000827819
+plant_377,José Cabrera (Grenergy) solar farm,50.4,40.3541,-2.8954,Castilla-La Mancha,2025.0,PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100000827823
+plant_378,Kenia solar farm,45.0,37.1468,-4.5821,Andalucía,2024.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001072816
+plant_379,Kenia solar farm,45.0,37.1468,-4.5821,Andalucía,2024.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001072855
+plant_380,Kenia solar farm,45.0,37.1468,-4.5821,Andalucía,2024.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001072856
+plant_381,Kenia solar farm,45.0,37.1468,-4.5821,Andalucía,2024.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001072857
+plant_382,Kissoro solar farm,42.3,37.1766,-2.9497,Andalucía,2022.0,PV,single_axis,True,0.0,-9,-0.15643446504023087,0.9876883405951378,True,G100000827825
+plant_383,L'Olleria and Garrofera solar project,11.7,38.9282,-0.5107,Comunidad Valenciana,2017.0,Assumed PV,fixed,True,36.0,0,0.0,1.0,True,G100001010641
+plant_384,La Aljorra solar farm,31.1,37.7214,-1.1724,Región de Murcia,2019.0,PV,single_axis,True,0.0,4,0.0697564737441253,0.9975640502598242,True,G100000827828
+plant_385,La Cabrita solar farm,46.2,37.0444,-2.3221,Andalucía,2021.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827830
+plant_386,La Corchuela solar farm,22.6,38.8273,-7.0179,Extremadura,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001008911
+plant_387,La Fernandina solar farm,45.0,38.884,-6.341,Extremadura,2019.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806804
+plant_388,La Flamenca solar project,12.8,37.2802,-7.2588,Andalucía,2017.0,Assumed PV,fixed,True,34.0,1,0.01745240643728351,0.9998476951563913,True,G100001010555
+plant_389,La Guita solar farm,46.6,36.6061,-5.7988,Andalucía,2022.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000827840
+plant_390,La Herrera 160 solar project,12.2,38.9567,-2.1039,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,36.0,0,0.0,1.0,True,G100001010470
+plant_391,La Isla solar farm,157.5,37.243,-5.8741,Andalucía,,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000827841
+plant_392,La Janda solar project II,10.0,36.351,-5.8605,Andalucía,2023.0,Assumed PV,single_axis,True,0.0,5,0.08715574274765817,0.9961946980917455,True,G100001061254
+plant_393,La Luz solar farm,49.9,37.323,-6.8988,Andalucía,2024.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001004293
+plant_394,La Luz solar farm,49.9,37.323,-6.8988,Andalucía,2024.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001004294
+plant_395,La Luz solar farm,22.5,37.323,-6.8988,Andalucía,2024.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001004295
+plant_396,La Magascona solar farm,23.0,39.4329,-5.9353,Extremadura,2007.0,PV,fixed,True,35.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806639
+plant_397,La Nava solar farm,48.0,38.6766,-4.1907,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000806796
+plant_398,La Pinilla solar farm,48.8,37.7214,-1.1724,Región de Murcia,2021.0,PV,single_axis,True,0.0,4,0.0697564737441253,0.9975640502598242,True,G100000827845
+plant_399,La Puente de Piedra solar project,11.2,41.4369,-2.5,Castilla y León,2008.0,Assumed PV,fixed,True,37.0,0,0.0,1.0,True,G100001010621
+plant_400,La Quintana solar project,12.2,37.7179,-4.8893,Andalucía,2017.0,Assumed PV,fixed,True,35.0,1,0.01745240643728351,0.9998476951563913,True,G100001010534
+plant_401,La Rambla solar project,12.7,37.6052,-4.7676,Andalucía,2017.0,Assumed PV,fixed,True,34.0,1,0.01745240643728351,0.9998476951563913,True,G100001010535
+plant_402,La Robla solar project,18.9,42.6955,-5.5866,Castilla y León,2017.0,Assumed PV,fixed,True,37.0,0,0.0,1.0,True,G100001010563
+plant_403,La Solana CR solar project,14.0,38.9244,-3.2562,Castilla-La Mancha,2023.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010525
+plant_404,La Solana solar farm,17.5,40.0179,-6.0874,Extremadura,2022.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000827855
+plant_405,La Solanilla solar farm,50.0,39.431,-5.9253,Extremadura,2020.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806714
+plant_406,La Sotonera Hoya De Huesca / Plana De Uesca solar project I,16.7,42.2121,-0.5608,Aragón,2023.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001011695
+plant_407,La Torre 40 solar farm,42.0,37.7813,-3.7876,Andalucía,2022.0,PV,single_axis,True,0.0,-6,-0.10452846326765347,0.9945218953682733,True,G100000827856
+plant_408,La Vega solar farm,50.0,36.9898,-4.913,Andalucía,2020.0,PV,single_axis,True,0.0,12,0.20791169081775934,0.9781476007338057,True,G100000806668
+plant_409,La Vega solar farm,36.0,36.9898,-4.913,Andalucía,2020.0,PV,single_axis,True,0.0,12,0.20791169081775934,0.9781476007338057,True,G100000806669
+plant_410,La Verilleja solar farm,26.0,38.7247,-5.5138,Extremadura,2010.0,PV,fixed,True,35.0,-5,-0.08715574274765817,0.9961946980917455,True,G100000806708
+plant_411,Las Corchas solar farm,50.0,37.4743,-5.7034,Andalucía,2020.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806670
+plant_412,Las Gabias N solar project,18.2,37.1436,-3.7153,Andalucía,2023.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010548
+plant_413,Las Gabias S solar project,18.0,37.129,-3.712,Andalucía,2008.0,Assumed PV,fixed,True,34.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010549
+plant_414,Las Jaras solar farm,59.0,38.719,-6.8169,Extremadura,2023.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827867
+plant_415,Las Naranjillas solar farm,50.0,37.425,-5.793,Andalucía,2021.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806732
+plant_416,Las Quinientas solar farm,110.0,36.6123,-6.1122,Andalucía,2021.0,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100000827870
+plant_417,Las Vaguadas I solar farm,10.0,38.8541,-6.9609,Extremadura,2023.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827871
+plant_418,Llanos De Olivenza solar project IX,10.0,38.5241,-6.8683,Extremadura,2023.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001011926
+plant_419,Llanos De Olivenza solar project V,15.5,38.4848,-7.0345,Extremadura,2023.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001011474
+plant_420,Llanos De Olivenza solar project VIII,16.9,38.703,-7.0798,Extremadura,2023.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001011837
+plant_421,Lobosillo solar project,14.6,37.7346,-1.0607,Región de Murcia,2017.0,Assumed PV,fixed,True,35.0,4,0.0697564737441253,0.9975640502598242,True,G100001010579
+plant_422,Logro solar farm,47.1,41.2617,-0.1265,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827882
+plant_423,Logrosán solar project,12.9,39.2929,-5.4865,Extremadura,2017.0,Assumed PV,fixed,True,35.0,0,0.0,1.0,True,G100001010509
+plant_424,Lorca Alto Guadalentín solar project IX,16.2,37.4897,-1.7751,Región de Murcia,2020.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001011632
+plant_425,Lorca Alto Guadalentín solar project VII,13.1,37.7563,-1.7016,Región de Murcia,2017.0,Assumed PV,fixed,True,35.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011363
+plant_426,Lorca Alto Guadalentín solar project VIII,10.3,37.48,-1.7807,Región de Murcia,2020.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001011631
+plant_427,Los Belos solar farm,50.0,41.4936,-1.0927,Aragón,2020.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806805
+plant_428,Los Escuderos solar farm,50.0,39.9312,-2.4474,Castilla-La Mancha,,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806726
+plant_429,Los Escuderos solar farm,50.0,39.9312,-2.4474,Castilla-La Mancha,,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806728
+plant_430,Los Escuderos solar farm,50.0,39.9312,-2.4474,Castilla-La Mancha,,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806727
+plant_431,Los Escuderos solar farm,50.0,39.9312,-2.4474,Castilla-La Mancha,,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806729
+plant_432,Los Frailes solar farm,50.0,38.7806,-7.0484,Extremadura,2022.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001006172
+plant_433,Los Gonzalez solar farm,50.0,37.2507,-5.6827,Andalucía,2020.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806860
+plant_434,Los Limonetes solar farm,49.9,38.7771,-6.8101,Extremadura,,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827886
+plant_435,Los Llanos solar farm (Spain),49.1,38.3181,-6.3769,Extremadura,2023.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806947
+plant_436,Los Llanos solar farm (Spain),35.7,38.3181,-6.3769,Extremadura,2023.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806948
+plant_437,Los Llanos solar farm (Spain),47.3,38.3181,-6.3769,Extremadura,2023.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806949
+plant_438,Los Monegros solar project I,14.1,41.8016,-0.0828,Aragón,2017.0,Assumed PV,fixed,True,38.0,0,0.0,1.0,True,G100001011068
+plant_439,Los Naranjos solar farm,50.0,37.4283,-5.8708,Andalucía,2020.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806671
+plant_440,Los Verdinales solar project,15.0,41.542,-4.631,Castilla y León,2020.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010647
+plant_441,Losa del Obispo solar project,11.3,39.6869,-0.8508,Comunidad Valenciana,2017.0,Assumed PV,fixed,True,37.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010642
+plant_442,Lucainena de las Torres solar project,15.3,37.015,-2.176,Andalucía,2008.0,Assumed PV,fixed,True,34.0,0,0.0,1.0,True,G100001010479
+plant_443,Luzentia solar farm,23.0,38.4715,-1.4231,Región de Murcia,2007.0,PV,fixed,True,36.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000807106
+plant_444,Madrid solar project II,10.7,40.49,-3.5473,Comunidad de Madrid,2021.0,Assumed PV,single_axis,True,0.0,-6,-0.10452846326765347,0.9945218953682733,True,G100001011735
+plant_445,Magacela solar project,15.7,38.9131,-5.7043,Extremadura,2023.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001010494
+plant_446,Mahora solar project,15.0,39.2101,-1.75,Castilla-La Mancha,2008.0,Assumed PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010471
+plant_447,Majada Alta solar farm,49.9,39.63,-7.4556,Extremadura,2022.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827905
+plant_448,Malabrigo solar farm,46.6,36.6901,-6.1264,Andalucía,2022.0,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100000827908
+plant_449,Malagón solar project,11.1,39.2615,-4.0867,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,34.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010527
+plant_450,Malpartida de Cáceres solar project,10.0,39.467,-6.51,Extremadura,2008.0,Assumed PV,fixed,True,35.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010510
+plant_451,Manantiales solar farm,30.0,40.8831,-2.759,Castilla-La Mancha,2025.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000827910
+plant_452,Manzanares (Elawan Energy) solar farm,36.0,39.0492,-3.3328,Castilla-La Mancha,2023.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000827917
+plant_453,Manzanares solar farm,42.0,38.9964,-3.3847,Castilla-La Mancha,,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000806912
+plant_454,Manzanares solar farm,42.0,38.9964,-3.3847,Castilla-La Mancha,,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000806913
+plant_455,Manztierra 1 solar farm,30.0,39.0185,-3.3056,Castilla-La Mancha,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001071478
+plant_456,Medina solar farm,30.0,41.34,-4.931,Castilla y León,2019.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806865
+plant_457,Mediomonte solar farm,49.8,41.2874,-0.324,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827930
+plant_458,Menorca solar project III,11.7,40.002,4.1493,Islas Baleares,2023.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011933
+plant_459,Migjorn solar project X,19.9,39.4192,2.7967,Islas Baleares,2020.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001011104
+plant_460,Minaya A solar project,13.5,39.1473,-2.2591,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,36.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010472
+plant_461,Minglanilla solar farm,99.6,39.5331,-1.5974,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827932
+plant_462,Minglanilla solar farm,99.6,39.5331,-1.5974,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827933
+plant_463,Miraflores solar farm,22.0,38.7503,-5.5455,Extremadura,2022.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000827935
+plant_464,Miramundo solar farm,50.0,36.52,-6.131,Andalucía,2019.0,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100000806806
+plant_465,Mocatero solar farm,40.1,41.2874,-0.324,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000827937
+plant_466,Molina De Segura Vega Media Del Segura solar project,11.0,38.1028,-1.1673,Región de Murcia,2018.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001011380
+plant_467,Monclova solar farm,50.0,37.549,-5.332,Andalucía,2019.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806900
+plant_468,Montesol solar farm,50.0,40.711,-0.899,Aragón,2020.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806807
+plant_469,Moratalla solar farm,36.0,38.3066,-1.8714,Región de Murcia,2025.0,PV,single_axis,True,0.0,-6,-0.10452846326765347,0.9945218953682733,True,G100001072893
+plant_470,Moratalla solar project,10.0,38.301,-1.763,Región de Murcia,2010.0,Assumed PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010582
+plant_471,Morita solar project,12.9,37.4547,-4.6965,Andalucía,2017.0,Assumed PV,fixed,True,34.0,0,0.0,1.0,True,G100001010537
+plant_472,Mudéjar solar farm,47.6,41.0222,-0.4292,Aragón,2025.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000806831
+plant_473,Mula Solar Photovoltaic Power Plant,494.0,37.9554,-1.4008,Región de Murcia,2019.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806607
+plant_474,Murcia (Solarpack) solar farm,54.0,38.0006,-1.3344,Región de Murcia,2025.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001008746
+plant_475,Murcia Campo De Cartagena Y Mar Menor solar project I,13.5,37.807,-1.0661,Región de Murcia,2017.0,Assumed PV,fixed,True,35.0,0,0.0,1.0,True,G100001010860
+plant_476,Murcia Campo De Cartagena Y Mar Menor solar project VIII,10.5,37.8167,-1.1514,Región de Murcia,2017.0,Assumed PV,fixed,True,35.0,0,0.0,1.0,True,G100001060977
+plant_477,Mérida solar project IV,14.0,38.848,-6.33,Extremadura,2024.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001061576
+plant_478,Naipes solar farm,41.7,38.7653,-6.581,Extremadura,2025.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827962
+plant_479,Naipes solar farm,41.7,38.7653,-6.581,Extremadura,2025.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827963
+plant_480,Nava de Campaña A solar project,15.0,38.47,-1.647,Castilla-La Mancha,2008.0,Assumed PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010473
+plant_481,Nertóbriga solar farm,50.0,38.257,-6.6127,Extremadura,2021.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806656
+plant_482,Niebla solar farm,50.0,37.3158,-6.8417,Andalucía,2023.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000827970
+plant_483,Ninobe 3 solar farm,22.3,38.9935,-3.3951,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000827971
+plant_484,Nobesol solar farm,60.0,39.625,-2.0884,Castilla-La Mancha,2008.0,PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806694
+plant_485,Noroeste solar project VI,10.9,38.0902,-1.7273,Región de Murcia,2023.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011423
+plant_486,Nororma solar project I,19.6,37.0904,-4.4235,Andalucía,2021.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001010712
+plant_487,Nororma solar project V,16.8,37.1077,-4.424,Andalucía,2021.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001011552
+plant_488,Níjarmar solar farm,21.5,37.0042,-2.1223,Andalucía,2025.0,PV,single_axis,True,0.0,2,0.03489949670250097,0.9993908270190958,True,G100001073343
+plant_489,Núñez De Balboa solar farm,500.0,38.4533,-6.226,Extremadura,2020.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806744
+plant_490,Ocaña solar farm,50.0,39.967,-3.5652,Castilla-La Mancha,2025.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000827980
+plant_491,Olivares EP solar project,11.3,37.8182,-3.8018,Andalucía,2019.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010558
+plant_492,Olivares solar farm,49.9,37.7983,-3.7983,Andalucía,2022.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000827991
+plant_493,Olmedilla Hive solar farm,169.0,39.6143,-2.1039,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827993
+plant_494,Olmedilla solar farm,42.0,39.6153,-2.1077,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806764
+plant_495,Olmedilla solar farm,11.5,39.6145,-2.1034,Castilla-La Mancha,2008.0,PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827994
+plant_496,Oriol solar farm,328.0,39.8221,-6.7734,Extremadura,,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000827997
+plant_497,Osa De La Vega solar farm,30.0,39.6506,-2.8001,Castilla-La Mancha,2008.0,PV,fixed,True,36.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000806945
+plant_498,Palabra solar farm,49.8,41.2874,-0.324,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000828003
+plant_499,Palacios Del Arzobispo solar farm,30.0,41.1631,-5.8912,Castilla y León,2019.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806866
+plant_500,Palma del Río PV solar farm,50.0,37.6337,-5.2733,Andalucía,2019.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000828008
+plant_501,Parcas solar farm,40.0,36.934,-2.068,Andalucía,2019.0,PV,single_axis,True,0.0,4,0.0697564737441253,0.9975640502598242,True,G100000806636
+plant_502,Partido Judicial De Loja solar project,11.6,37.1004,-3.7905,Andalucía,2017.0,Assumed PV,fixed,True,34.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001060788
+plant_503,Pedroso solar farm,30.9,37.6568,-5.5269,Andalucía,,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000828013
+plant_504,Perseo Fotón solar farm,45.0,39.0048,-3.3892,Castilla-La Mancha,2021.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806836
+plant_505,Perseo Fotón solar farm,45.0,39.0048,-3.3892,Castilla-La Mancha,2021.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806837
+plant_506,Perseo Fotón solar farm,36.0,39.0048,-3.3892,Castilla-La Mancha,2024.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806838
+plant_507,Peñaflor 2 solar farm,49.5,41.2597,-0.5265,Aragón,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828016
+plant_508,Peñarrubia solar farm,50.0,43.2591,-4.5842,Andalucía,2024.0,PV,single_axis,True,0.0,-10,-0.17364817766693033,0.984807753012208,True,G100000828019
+plant_509,Picón solar farm,50.0,39.0301,-4.0201,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806793
+plant_510,Picón solar farm,50.0,39.0301,-4.0201,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806794
+plant_511,Picón solar farm,50.0,39.0301,-4.0201,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806795
+plant_512,Pinos Puente solar farm,147.6,37.2531,-3.7535,Andalucía,2022.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001008785
+plant_513,Pizarroso solar farm,49.8,39.4731,-6.3772,Extremadura,2023.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001008757
+plant_514,Pla De Mallorca solar project XI,12.5,39.7589,3.1429,Islas Baleares,2022.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001011708
+plant_515,Plasencia solar project,14.1,41.713,-1.2512,Aragón,2017.0,Assumed PV,fixed,True,38.0,0,0.0,1.0,True,G100001010654
+plant_516,Poblete solar farm,20.0,38.9358,-3.982,Castilla-La Mancha,2023.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828029
+plant_517,Poleñino solar farm,30.0,41.874,-0.321,Aragón,2019.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000806869
+plant_518,Portachuelo (Sonnedix) solar farm,35.0,39.8755,-3.9431,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001006397
+plant_519,Posadas solar farm,50.0,37.8042,-5.108,Andalucía,,PV,single_axis,True,0.0,2,0.03489949670250097,0.9993908270190958,True,G100000828033
+plant_520,Pozohondo II solar project,17.7,38.7197,-1.8822,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,36.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010475
+plant_521,Prados de Luna solar project,13.5,40.0187,-3.9168,Castilla-La Mancha,2021.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010634
+plant_522,Puebla de Almoradiel solar project,11.8,39.632,-3.09,Castilla-La Mancha,2008.0,Assumed PV,fixed,True,36.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010635
+plant_523,Puerta Palma solar farm,50.0,38.7574,-6.3997,Extremadura,,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806660
+plant_524,Puerta del Jerte solar farm,30.0,40.0276,-6.0943,Extremadura,2023.0,PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100000828039
+plant_525,Puerta del Sol solar farm,44.0,40.6952,-3.3499,Castilla-La Mancha,2023.0,PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100000828040
+plant_526,Puerto Lumbreras solar farm,50.0,37.5202,-1.8111,Región de Murcia,2021.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000828043
+plant_527,Puerto Real solar farm,133.6,36.5152,-6.2765,Andalucía,2019.0,PV,single_axis,True,0.0,4,0.0697564737441253,0.9975640502598242,True,G100000828044
+plant_528,Puerto Real solar farm,46.9,36.5152,-6.2765,Andalucía,2022.0,PV,single_axis,True,0.0,4,0.0697564737441253,0.9975640502598242,True,G100000828045
+plant_529,Puerto Real solar farm,50.0,36.5197,-6.2789,Andalucía,2023.0,PV,single_axis,True,0.0,4,0.0697564737441253,0.9975640502598242,True,G100000828046
+plant_530,Puertollano Green Hydrogen Solar Plant,120.0,38.6927,-4.097,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100000806760
+plant_531,Puertollano solar farm,50.0,38.6201,-3.974,Castilla-La Mancha,2008.0,PV,fixed,True,35.0,-5,-0.08715574274765817,0.9961946980917455,True,G100000806833
+plant_532,Quijote solar farm,42.2,38.7824,-6.625,Extremadura,2019.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828047
+plant_533,Renedo (Solaria) solar farm,26.0,41.0525,-4.6481,Castilla y León,2020.0,PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100001008968
+plant_534,Renopool solar farm,130.0,38.7978,-6.6289,Extremadura,2025.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001008764
+plant_535,Revilla-Vallejera solar farm,50.0,42.1462,-4.1598,Castilla y León,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828058
+plant_536,Rey solar farm,89.1,37.5627,-5.6031,Andalucía,2025.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000828059
+plant_537,Rey solar farm,89.1,37.5627,-5.6031,Andalucía,2025.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000828060
+plant_538,Rey solar farm,89.1,37.5627,-5.6031,Andalucía,2025.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000828061
+plant_539,Rey solar farm,89.1,37.5627,-5.6031,Andalucía,2025.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000828062
+plant_540,Ribagrande solar farm,49.8,41.2617,-0.1265,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000828063
+plant_541,Ribera Alta Del Ebro solar project VI,18.6,41.7479,-1.2045,Aragón,2024.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001061129
+plant_542,Ribera Alta Del Ebro solar project VII,13.5,41.7199,-1.2108,Aragón,2024.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001061453
+plant_543,Rioja solar project II,10.5,42.3234,-2.0391,La Rioja,2023.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010839
+plant_544,Rioja solar project IX,17.0,42.2137,-1.8548,La Rioja,2017.0,Assumed PV,fixed,True,37.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011334
+plant_545,Rioja solar project VII,11.6,42.2036,-1.8248,La Rioja,2019.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011268
+plant_546,Rioja solar project XI,10.2,42.2545,-1.998,La Rioja,2019.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001011890
+plant_547,Rioja solar project XIX,11.6,42.457,-2.7066,La Rioja,2017.0,Assumed PV,fixed,True,36.0,2,0.03489949670250097,0.9993908270190958,True,G100001061309
+plant_548,Rota solar project,14.8,36.694,-6.2842,Andalucía,2023.0,Assumed PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100001010517
+plant_549,Río Mula solar project II,19.2,37.9884,-1.3725,Región de Murcia,2018.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010833
+plant_550,SEAT al Sol solar project,11.0,41.4918,1.9016,Cataluña,2013.0,Assumed PV,fixed,True,38.0,1,0.01745240643728351,0.9998476951563913,True,G100001010503
+plant_551,Sa Caseta solar farm,21.8,39.489,2.8904,Islas Baleares,,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000828075
+plant_552,Sabinar Hive solar farm,155.0,39.5465,-2.0874,Castilla-La Mancha,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000828076
+plant_553,Sabinar Hive solar farm,83.0,38.2062,-2.1551,Región de Murcia,,PV,single_axis,True,0.0,-6,-0.10452846326765347,0.9945218953682733,True,G100000828077
+plant_554,Sadaba B solar project,14.6,42.2647,-1.2532,Aragón,2017.0,Assumed PV,fixed,True,38.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010655
+plant_555,Saelices solar project,11.4,39.918,-2.822,Castilla-La Mancha,2010.0,Assumed PV,fixed,True,36.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010541
+plant_556,Salamanca ES solar project,13.8,41.0277,-5.85,Castilla y León,2007.0,Assumed PV,fixed,True,36.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010603
+plant_557,San Antonio (Enel) solar farm,28.5,37.3285,-6.9279,Andalucía,2022.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000828085
+plant_558,San Antonio (Iberdrola) solar farm,49.9,39.6096,-7.4516,Extremadura,2022.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000828086
+plant_559,San Jorge (Comunidad Valenciana) solar farm,23.0,40.5641,0.373,Comunidad Valenciana,2022.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001072791
+plant_560,San Serván solar farm,42.3,38.7242,-6.5445,Extremadura,2022.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000828089
+plant_561,San Serván solar farm,42.3,38.7242,-6.5445,Extremadura,2022.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000828090
+plant_562,San Serván solar farm,42.3,38.7242,-6.5445,Extremadura,2022.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806715
+plant_563,Santa María Del Cubillo solar project I,13.1,40.7117,-4.4392,Castilla y León,2024.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001061420
+plant_564,Santiz solar farm,50.0,41.207,-5.844,Castilla y León,2019.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806867
+plant_565,Sedéis solar farm,37.5,41.0109,-0.3844,Aragón,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000828097
+plant_566,Segovia solar project I,15.4,40.9258,-4.1634,Castilla y León,2019.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010761
+plant_567,Segovia solar project II,14.1,40.9188,-4.1509,Castilla y León,2019.0,Assumed PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001010846
+plant_568,Segrià solar project I,11.4,41.5871,0.7476,Cataluña,2017.0,Assumed PV,fixed,True,37.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010793
+plant_569,Serrezuela solar farm,32.5,37.0878,-3.7624,Andalucía,2007.0,PV,fixed,True,34.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828099
+plant_570,Sevilla Calaspasol solar farm,39.9,37.5424,-6.0559,Andalucía,,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000828100
+plant_571,Sierra De Cádiz solar project II,13.4,36.8509,-5.6561,Andalucía,2017.0,Assumed PV,fixed,True,33.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001011035
+plant_572,Sierra De Cádiz solar project IV,12.7,36.9135,-5.5916,Andalucía,2017.0,Assumed PV,fixed,True,33.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011272
+plant_573,Sierra Suroeste solar project I,11.1,38.3125,-6.7269,Extremadura,2023.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010744
+plant_574,Sierra Suroeste solar project V,10.9,38.1843,-6.6394,Extremadura,2024.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011468
+plant_575,Sierra Suroeste solar project VI,10.2,38.1867,-6.6513,Extremadura,2024.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011469
+plant_576,Sierresita solar project,10.0,37.644,-4.59,Andalucía,2008.0,Assumed PV,fixed,True,34.0,0,0.0,1.0,True,G100001010538
+plant_577,Sierrezuela solar farm,49.8,41.2617,-0.1265,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000828102
+plant_578,Sigma (Reposal) solar farm,204.0,36.6343,-6.3508,Andalucía,2024.0,PV,single_axis,True,0.0,4,0.0697564737441253,0.9975640502598242,True,G100000806834
+plant_579,Sigma (Solaria) solar farm,30.0,41.9746,-4.3876,Castilla y León,2021.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806881
+plant_580,Socovos 2 solar farm,21.6,38.3125,-1.8864,Castilla-La Mancha,2021.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100001090835
+plant_581,Socovos 2 solar farm,33.0,38.3219,-1.8902,Castilla-La Mancha,2025.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001006528
+plant_582,Sol De Casaquemada solar farm,50.0,37.4296,-6.281,Andalucía,2022.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806667
+plant_583,Solten II solar project,10.5,28.0702,-16.5255,Canarias,2017.0,Assumed PV,fixed,True,27.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010611
+plant_584,Son Reus solar farm,10.7,39.6491,2.6849,Islas Baleares,,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000828115
+plant_585,Son Salomó solar farm,52.0,39.9704,3.9048,Islas Baleares,2023.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001008766
+plant_586,Sonnedix El Carrascal solar farm,20.0,41.3367,-4.9184,Castilla y León,2023.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100001006840
+plant_587,Spex Solar Power Plant solar farm,30.0,38.8897,-6.2859,Extremadura,2008.0,PV,fixed,True,34.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806855
+plant_588,Stellantis (Vigo) solar farm,10.8,42.2082,-8.7418,Galicia,,PV,single_axis,True,0.0,3,0.052335956242943835,0.9986295347545738,True,G100000828120
+plant_589,Stellantis (Zaragoza) solar farm,16.6,41.7527,-1.1783,Aragón,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828122
+plant_590,Stellantis (Zaragoza) solar farm,14.5,41.7527,-1.1783,Aragón,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828123
+plant_591,Sunplex solar farm,42.3,37.1766,-2.9497,Andalucía,2022.0,PV,single_axis,True,0.0,-9,-0.15643446504023087,0.9876883405951378,True,G100000828125
+plant_592,Tabernas (Naturgy) solar farm,48.8,37.0698,-2.3152,Andalucía,2022.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000828127
+plant_593,Tabernas (Naturgy) solar farm,48.8,37.0698,-2.3152,Andalucía,2022.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000828128
+plant_594,Tabernas 2 solar farm,50.0,37.0524,-2.2628,Andalucía,,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000828129
+plant_595,Tagus (Iberdrola) solar farm,50.0,39.6426,-7.005,Extremadura,2023.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828131
+plant_596,Tagus (Iberdrola) solar farm,50.0,39.6426,-7.005,Extremadura,2023.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828132
+plant_597,Tagus (Iberdrola) solar farm,50.0,39.6426,-7.005,Extremadura,2023.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828133
+plant_598,Tagus (Iberdrola) solar farm,50.0,39.6426,-7.005,Extremadura,2023.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828134
+plant_599,Talasol solar farm,300.0,39.632,-6.3,Extremadura,2020.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806789
+plant_600,Talaván solar farm,28.0,39.7172,-6.2765,Extremadura,2022.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806788
+plant_601,Talayuela (Solarcentury) solar farm,300.0,39.919,-5.418,Extremadura,2020.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806861
+plant_602,Talayuela 1-2 solar project,10.0,40.0208,-5.579,Extremadura,2008.0,Assumed PV,fixed,True,36.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010512
+plant_603,Talayuela II (Statkraft) solar farm,55.2,39.9864,-5.3987,Extremadura,2023.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000828137
+plant_604,Talento solar farm,49.8,41.1891,-0.3858,Aragón,2019.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828138
+plant_605,Tambores 1 solar farm,49.5,41.2699,-0.5282,Aragón,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828140
+plant_606,Tejeda de Tietar solar project,18.3,39.9543,-5.8752,Extremadura,2017.0,Assumed PV,fixed,True,35.0,0,0.0,1.0,True,G100001010513
+plant_607,Tico solar farm,35.8,41.2066,-0.9668,Aragón,2022.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000828157
+plant_608,Tico solar farm,28.0,41.2066,-0.9668,Aragón,,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000828158
+plant_609,Tierra De Barros solar project I,10.4,38.566,-6.2167,Extremadura,2017.0,Assumed PV,fixed,True,35.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011071
+plant_610,Tierra de Badajoz solar farm,48.8,39.2774,-6.2734,Extremadura,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828159
+plant_611,Tiza solar farm,30.0,36.8391,-2.4619,Andalucía,,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000828160
+plant_612,Tordesillas (Baywa R.E.) solar farm,42.0,39.3261,-4.838,Castilla y León,2021.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000806575
+plant_613,Tordesillas (Solaria) solar farm,30.0,41.4721,-5.0141,Castilla y León,2019.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806870
+plant_614,Tordesillas (Solaria) solar farm,50.0,41.4721,-5.0141,Castilla y León,2019.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000806871
+plant_615,Tordesillas 3 solar project,15.0,41.519,-4.996,Castilla y León,2019.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010650
+plant_616,Tordesillas OPDE solar project,10.0,41.5062,-5.0275,Castilla y León,2010.0,Assumed PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010651
+plant_617,Torre De Cotillas solar farm,50.0,37.979,-1.322,Región de Murcia,2019.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000806637
+plant_618,Torrealvilla A solar project,10.0,37.766,-1.723,Región de Murcia,2015.0,Assumed PV,fixed,True,35.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010584
+plant_619,Torrecilla solar farm,42.0,39.5748,-5.7513,Extremadura,,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828164
+plant_620,Torrepalma solar farm,22.0,37.453,-5.798,Andalucía,2021.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806662
+plant_621,Torrijos solar farm,35.6,40.0456,-4.2734,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000828166
+plant_622,Torrubia solar farm,50.0,41.4991,-1.0996,Aragón,2023.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828167
+plant_623,Totana solar farm,85.0,37.7587,-1.4304,Región de Murcia,2019.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806672
+plant_624,Tres Pinos solar project,17.7,38.2072,-1.2525,Región de Murcia,2023.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010587
+plant_625,Trillo Node solar farm,338.0,40.7048,-2.5909,Castilla-La Mancha,2023.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806862
+plant_626,Trillo Node solar farm,138.0,40.7048,-2.5909,Castilla-La Mancha,2023.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806863
+plant_627,Trillo Node solar farm,150.0,40.7048,-2.5909,Castilla-La Mancha,2023.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806864
+plant_628,Turroneros solar farm,35.0,38.5089,-0.4711,Comunidad Valenciana,2021.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828174
+plant_629,Turroneros solar farm,14.6,38.5089,-0.4711,Comunidad Valenciana,2024.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828175
+plant_630,Ursa Maior solar farm,48.1,42.5168,-5.7671,Castilla y León,2022.0,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000828180
+plant_631,Valbuena solar farm,50.0,40.6341,-3.1717,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-5,-0.08715574274765817,0.9961946980917455,True,G100000828181
+plant_632,Valdecaballeros A solar project,10.0,39.2945,-5.2036,Extremadura,2008.0,Assumed PV,fixed,True,34.0,1,0.01745240643728351,0.9998476951563913,True,G100001010496
+plant_633,Valdecaballeros solar project,10.0,39.294,-5.217,Extremadura,2008.0,Assumed PV,fixed,True,34.0,1,0.01745240643728351,0.9998476951563913,True,G100001010495
+plant_634,Valdecarretas (Renewables japan) solar farm,37.8,41.4413,-5.3745,Castilla y León,,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001003772
+plant_635,Valdecarro solar farm,49.8,39.3939,-3.2131,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000828183
+plant_636,Valdejalón solar project II,13.2,41.5007,-1.3488,Aragón,2022.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011643
+plant_637,Valdelagua solar farm,49.8,41.2617,-0.1265,Aragón,,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000828184
+plant_638,Valdelaguna solar project,14.7,36.9553,-2.4344,Andalucía,2017.0,Assumed PV,fixed,True,34.0,0,0.0,1.0,True,G100001010561
+plant_639,Valdelosa solar farm,30.0,41.212,-5.842,Castilla y León,2019.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100000806872
+plant_640,Valdesolar solar farm,264.0,38.7986,-6.2371,Extremadura,2021.0,PV,single_axis,True,0.0,2,0.03489949670250097,0.9993908270190958,True,G100000806835
+plant_641,Valdivieso solar farm,49.9,39.3939,-3.2131,Castilla-La Mancha,2019.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000828187
+plant_642,Valdompere solar farm,18.3,41.4239,-0.6109,Aragón,2023.0,PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001005020
+plant_643,Valencian Community solar project II,11.5,39.8846,-0.1017,Comunidad Valenciana,2022.0,Assumed PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100001010672
+plant_644,Valencian Community solar project III,11.1,39.4748,-1.1557,Comunidad Valenciana,2023.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010765
+plant_645,Valencian Community solar project XXXIX,14.4,40.5643,0.373,Comunidad Valenciana,2022.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001011846
+plant_646,Valladolid (Sonnedix) solar farm,15.4,41.6426,-4.734,Castilla y León,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000828189
+plant_647,Valladolid (Sonnedix) solar farm,15.4,41.6426,-4.734,Castilla y León,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001008808
+plant_648,Valladolid (Sonnedix) solar farm,15.4,41.6426,-4.734,Castilla y León,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001008809
+plant_649,Valladolid (Sonnedix) solar farm,15.4,41.6426,-4.734,Castilla y León,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001008810
+plant_650,Valladolid (Sonnedix) solar farm,15.4,41.6426,-4.734,Castilla y León,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001008811
+plant_651,Valladolid (Sonnedix) solar farm,15.4,41.6426,-4.734,Castilla y León,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001008812
+plant_652,Valladolid (Sonnedix) solar farm,15.4,41.6426,-4.734,Castilla y León,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001008813
+plant_653,Valladolid solar project II,10.2,41.7864,-4.8551,Castilla y León,2023.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011545
+plant_654,Valladolid solar project III,13.1,41.7926,-4.865,Castilla y León,2023.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011546
+plant_655,Valle Del Almanzora solar project IV,14.4,37.371,-2.236,Andalucía,2022.0,Assumed PV,single_axis,True,0.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001011876
+plant_656,Valle Del Zalabí Comarca De Guadix solar project,10.1,37.243,-3.0756,Andalucía,2017.0,Assumed PV,fixed,True,35.0,-8,-0.13917310096006544,0.9902680687415704,True,G100001011157
+plant_657,Valverdon solar project,15.5,41.0583,-5.7828,Castilla y León,2017.0,Assumed PV,fixed,True,36.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010604
+plant_658,Vega Media Del Segura solar project IV,12.6,38.136,-1.1686,Región de Murcia,2023.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001060598
+plant_659,Vejer de la Frontera solar project,10.0,36.2447,-6.008,Andalucía,2008.0,Assumed PV,fixed,True,33.0,5,0.08715574274765817,0.9961946980917455,True,G100001010518
+plant_660,Veracruz solar farm,50.0,38.7574,-6.3997,Extremadura,,PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100000806659
+plant_661,Vidriera Crisnova solar farm,12.0,38.7099,-0.9496,Castilla-La Mancha,2022.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000828203
+plant_662,Villanueva 2 (Eni) solar farm,50.0,40.0093,-2.5723,Castilla-La Mancha,2024.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001023757
+plant_663,Villanueva de Serena solar project,10.6,38.9627,-5.7713,Extremadura,2017.0,Assumed PV,fixed,True,35.0,-1,-0.01745240643728351,0.9998476951563913,True,G100001010498
+plant_664,Villanueva del Rey solar farm,50.0,37.5216,-4.5467,Andalucía,2024.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000828214
+plant_665,Villar de Cañas solar project,14.8,39.8335,-2.5686,Castilla-La Mancha,2017.0,Assumed PV,fixed,True,36.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001010544
+plant_666,Villarino solar farm,49.9,41.2732,-6.4623,Castilla y León,2023.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806757
+plant_667,Virgen del Carmen solar farm,26.1,37.3766,-6.9684,Andalucía,,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000828220
+plant_668,Yecla Altiplano solar project V,19.1,38.6608,-1.1179,Región de Murcia,2017.0,Assumed PV,fixed,True,36.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011213
+plant_669,Zafra (Opdenergy) solar farm,50.0,37.3063,-5.8242,Andalucía,2019.0,PV,single_axis,True,0.0,1,0.01745240643728351,0.9998476951563913,True,G100000806808
+plant_670,Zafra - Río Bodión solar project IX,18.2,38.4295,-6.3829,Extremadura,2022.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001061362
+plant_671,Zafra - Río Bodión solar project VIII,14.8,38.4334,-6.4387,Extremadura,2021.0,Assumed PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100001011477
+plant_672,Zaragoza solar project II,12.1,41.9091,-0.8046,Aragón,2021.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011235
+plant_673,Zaragoza solar project III,10.8,41.5183,-0.8563,Aragón,2023.0,Assumed PV,single_axis,True,0.0,0,0.0,1.0,True,G100001011642
+plant_674,Zaragoza solar project IX,18.4,41.8613,-0.724,Aragón,2023.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011649
+plant_675,Zaragoza solar project VII,17.6,41.8775,-0.8167,Aragón,2020.0,Assumed PV,single_axis,True,0.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001011647
+plant_676,Zaratán solar farm,33.0,41.644,-4.8492,Castilla y León,2023.0,PV,single_axis,True,0.0,-3,-0.052335956242943835,0.9986295347545738,True,G100000828234
+plant_677,Zarza solar project,15.0,39.8688,-6.8324,Extremadura,2017.0,Assumed PV,fixed,True,35.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010515
+plant_678,Zarzuela solar farm,41.8,42.1824,-4.1526,Castilla y León,2021.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000828235
+plant_679,Zorita solar farm,50.0,40.3505,-2.8818,Castilla-La Mancha,2025.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000828241
+plant_680,Zorita solar farm,50.0,40.3505,-2.8818,Castilla-La Mancha,2025.0,PV,single_axis,True,0.0,-4,-0.0697564737441253,0.9975640502598242,True,G100000828242
+plant_681,Zuera II solar project,17.3,41.9448,-0.8185,Aragón,2017.0,Assumed PV,fixed,True,38.0,-2,-0.03489949670250097,0.9993908270190958,True,G100001010657
+plant_682,Zurbarán (Enel) solar farm,42.9,39.0656,-5.7224,Extremadura,2019.0,PV,single_axis,True,0.0,0,0.0,1.0,True,G100000828246
