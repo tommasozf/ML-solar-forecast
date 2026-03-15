@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Power Plants in Spain</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sun: #F5A623;
+    --sun-light: #FDE68A;
+    --bg: #0F1117;
+    --surface: #181C26;
+    --surface2: #1E2332;
+    --border: #2A3047;
+    --text: #E8EAF0;
+    --text-dim: #8B92A8;
+    --accent: #F5A623;
+    --green: #34D399;
+    --blue: #60A5FA;
+    --red: #F87171;
+    --purple: #A78BFA;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  header {
+    background: linear-gradient(135deg, #1a1200 0%, #2a1a00 40%, #0F1117 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 36px 48px 28px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(245,166,35,0.18) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .header-inner { position: relative; z-index: 1; }
+
+  .tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--sun);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  h1 span { color: var(--sun); }
+
+  .subtitle {
+    font-size: 13px;
+    color: var(--text-dim);
+    font-weight: 300;
+    max-width: 700px;
+    line-height: 1.6;
+  }
+
+  .stats-row {
+    display: flex;
+    gap: 32px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .stat-val {
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--sun);
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .controls {
+    padding: 16px 48px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 7px 12px;
+    flex: 1;
+    min-width: 200px;
+    max-width: 320px;
+  }
+
+  .search-box input {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .search-box input::placeholder { color: var(--text-dim); }
+
+  .filter-label {
+    font-size: 12px;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+
+  select {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    padding: 7px 10px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .legend {
+    display: flex;
+    gap: 16px;
+    margin-left: auto;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+
+  .legend-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding: 0 48px 48px;
+    margin-top: 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    margin-top: 20px;
+  }
+
+  thead th {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  thead th:hover { color: var(--sun); }
+
+  thead th .sort-arrow {
+    display: inline-block;
+    margin-left: 4px;
+    opacity: 0.4;
+    font-size: 9px;
+  }
+
+  thead th.sorted .sort-arrow { opacity: 1; color: var(--sun); }
+
+  tbody tr {
+    border-bottom: 1px solid rgba(42,48,71,0.5);
+    transition: background 0.1s;
+  }
+
+  tbody tr:hover { background: var(--surface2); }
+
+  tbody tr.hidden { display: none; }
+
+  td {
+    padding: 10px 14px;
+    vertical-align: middle;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  td.name-col {
+    font-weight: 500;
+    color: var(--text);
+    max-width: 220px;
+    white-space: normal;
+    font-size: 12px;
+  }
+
+  td.cap-col {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    text-align: right;
+  }
+
+  .cap-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cap-bar {
+    height: 4px;
+    border-radius: 2px;
+    background: var(--sun);
+    opacity: 0.7;
+    min-width: 2px;
+  }
+
+  td.coord-full {
+    font-family: 'Space Mono', monospace;
+    font-size: 10.5px;
+    color: var(--blue);
+  }
+
+  td.coord-round {
+    font-family: 'Space Mono', monospace;
+    font-size: 10.5px;
+    color: var(--text-dim);
+  }
+
+  td.year-col {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+  }
+
+  .year-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 10.5px;
+    font-family: 'Space Mono', monospace;
+  }
+
+  .year-known { background: rgba(52,211,153,0.12); color: var(--green); border: 1px solid rgba(52,211,153,0.25); }
+  .year-approx { background: rgba(245,166,35,0.1); color: var(--sun); border: 1px solid rgba(245,166,35,0.2); }
+  .year-unknown { background: rgba(139,146,168,0.1); color: var(--text-dim); border: 1px solid rgba(139,146,168,0.15); }
+
+  .conf-dot {
+    display: inline-block;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+    flex-shrink: 0;
+  }
+
+  .conf-high { background: var(--green); }
+  .conf-med  { background: var(--sun); }
+  .conf-low  { background: var(--red); }
+
+  .note-col {
+    font-size: 11px;
+    color: var(--text-dim);
+    max-width: 200px;
+    white-space: normal;
+    line-height: 1.4;
+  }
+
+  .note-col .flag {
+    color: var(--purple);
+    font-weight: 600;
+  }
+
+  .row-count {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    padding: 8px 48px;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 768px) {
+    header, .controls, .table-wrap, .row-count { padding-left: 16px; padding-right: 16px; }
+    h1 { font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="tag">● Energy Infrastructure Database</div>
+    <h1>Solar Power Plants — <span>Spain</span></h1>
+    <p class="subtitle">Coordinates, installed capacity, and commissioning dates for 237 utility-scale solar facilities.
+    Coordinate confidence indicated per row. Commissioning dates sourced primarily from NREL SolarPACES;
+    unmarked dates are approximate/uncertain.</p>
+    <div class="stats-row">
+      <div class="stat"><span class="stat-val">237</span><span class="stat-label">Plants</span></div>
+      <div class="stat"><span class="stat-val">4,762.5 MW</span><span class="stat-label">Total Capacity</span></div>
+      <div class="stat"><span class="stat-val">2006–2024</span><span class="stat-label">Commissioning Range</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="search-box">
+    <svg width="14" height="14" fill="none" stroke="#8B92A8" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input type="text" id="searchInput" placeholder="Filter by name…">
+  </div>
+  <span class="filter-label">Sort by:</span>
+  <select id="sortSelect" onchange="applySort()">
+    <option value="name-asc">Name A→Z</option>
+    <option value="cap-desc">Capacity ↓</option>
+    <option value="cap-asc">Capacity ↑</option>
+    <option value="year-asc">Year ↑</option>
+  </select>
+  <div class="legend">
+    <div class="legend-item"><span class="legend-dot conf-high"></span>Confirmed coords</div>
+    <div class="legend-item"><span class="legend-dot conf-med"></span>Approximate coords</div>
+    <div class="legend-item"><span class="legend-dot conf-low"></span>Estimated coords</div>
+  </div>
+</div>
+
+<div class="table-wrap">
+  <table id="mainTable">
+    <thead>
+      <tr>
+        <th onclick="sortBy('name')">Plant Name <span class="sort-arrow">↕</span></th>
+        <th onclick="sortBy('cap')" style="text-align:right">Capacity (MW) <span class="sort-arrow">↕</span></th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th>Lat (×0.1°)</th>
+        <th>Lon (×0.1°)</th>
+        <th>Coord conf.</th>
+        <th onclick="sortBy('year')">Op. Year <span class="sort-arrow">↕</span></th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+  </table>
+</div>
+<div class="row-count" id="rowCount"></div>
+
+<script>
+// Confidence: H=high (confirmed from NREL/official), M=medium (approx from municipality), L=low (estimated)
+// Year confidence: K=known (sourced), A=approx, U=unknown
+const plants = [
+  // ── CONFIRMED CSP (NREL SolarPACES) ──
+  { name:"ANDASOL-3",                  cap:149.7, lat:37.229,  lng:-3.069,  conf:"H", year:2011, yconf:"K", note:"NREL SolarPACES. Capacity listed as 149.7 MW in source (two-phase: Andasol-3 nameplate 50 MW CSP; 149.7 MW likely combined Andasol 1+2+3 registry figure). ⚠️ Capacity note: original document lists 149.7 MW." },
+  { name:"ASTE 1A",                    cap:99.8,  lat:39.176,  lng:-3.234,  conf:"H", year:2012, yconf:"K", note:"NREL SolarPACES. Capacity note: NREL records 50 MW nameplate; 99.8 MW likely combined ASTE 1A+1B registry figure." },
+  { name:"ASTEXOL-2",                  cap:49.9,  lat:38.81,   lng:-7.053,  conf:"H", year:2012, yconf:"K", note:"NREL SolarPACES." },
+  { name:"CENTRAL SOLAR TERMOELECTRICA ENERSTAR VILLENA", cap:49.9, lat:38.729, lng:-0.922, conf:"H", year:2013, yconf:"K", note:"NREL SolarPACES (Enerstar)." },
+  { name:"CENTRAL TERMOSOLAR LA AFRICANA", cap:49.9, lat:37.755, lng:-5.057, conf:"H", year:2012, yconf:"K", note:"NREL SolarPACES." },
+  { name:"CONSOLL ORELLANA",           cap:49.9,  lat:38.992,  lng:-5.549,  conf:"H", year:2012, yconf:"K", note:"NREL SolarPACES (Orellana)." },
+  { name:"EXTRESOL-1",                 cap:149.8, lat:38.65,   lng:-6.733,  conf:"H", year:2009, yconf:"K", note:"NREL SolarPACES. Capacity note: NREL 50 MW nameplate; 149.8 MW likely combined Extresol 1+2+3." },
+  { name:"HELIOS I",                   cap:99.8,  lat:39.24,   lng:-3.47,   conf:"H", year:2012, yconf:"K", note:"NREL SolarPACES. Capacity note: NREL 50 MW nameplate; 99.8 MW likely combined Helios I+II." },
+  { name:"LA DEHESA",                  cap:49.9,  lat:38.952,  lng:-6.463,  conf:"H", year:2010, yconf:"K", note:"NREL SolarPACES. Start year listed as 2011 on NREL; source doc says 2010." },
+  { name:"LA FLORIDA",                 cap:49.9,  lat:38.817,  lng:-6.829,  conf:"H", year:2010, yconf:"K", note:"NREL SolarPACES." },
+  { name:"LA RISCA",                   cap:50.0,  lat:38.827,  lng:-6.826,  conf:"H", year:2009, yconf:"K", note:"NREL SolarPACES (La Risca – Alvarado I)." },
+  { name:"MAJADAS",                    cap:49.9,  lat:39.968,  lng:-5.742,  conf:"H", year:2010, yconf:"K", note:"NREL SolarPACES (Majadas I)." },
+  { name:"MANCHASOL-2",                cap:99.8,  lat:39.182,  lng:-3.314,  conf:"H", year:2011, yconf:"K", note:"NREL SolarPACES. Capacity note: NREL 50 MW nameplate; 99.8 MW likely combined Manchasol 1+2." },
+  { name:"PLANTA SOLAR TERMICA HELIOENERGY 1", cap:100.0, lat:37.582, lng:-5.116, conf:"H", year:2011, yconf:"K", note:"NREL SolarPACES. Capacity note: NREL 50 MW; 100 MW likely Helioenergy 1+2 combined." },
+  { name:"PLANTA SOLAR TERMICA SOLAR TRES", cap:19.903, lat:37.562, lng:-5.33, conf:"H", year:2011, yconf:"K", note:"NREL SolarPACES (Gemasolar). NREL nominal: 20 MW." },
+  { name:"PLANTA SOLAR TERMICA SOLNOVA 1", cap:150.0, lat:37.442, lng:-6.25, conf:"H", year:2010, yconf:"K", note:"NREL SolarPACES. Capacity note: NREL 50 MW nameplate; 150 MW likely combined Solnova 1+3+4." },
+  { name:"PLANTA TERMOSOLAR DE OLIVENZA-1", cap:50.0, lat:38.81, lng:-7.059, conf:"H", year:2012, yconf:"K", note:"NREL SolarPACES (Olivenza 1)." },
+  { name:"PLANTA TERMOELECTRICA PS 10", cap:11.02, lat:37.442, lng:-6.25, conf:"H", year:2006, yconf:"K", note:"NREL SolarPACES (PS10). Start year 2007 on NREL; 2006 per original doc." },
+  { name:"PST LEBRIJA I",              cap:49.9,  lat:37.003,  lng:-6.048,  conf:"H", year:2011, yconf:"K", note:"NREL SolarPACES (Lebrija 1)." },
+  { name:"PST PALMA DEL RIO I",        cap:49.9,  lat:37.645,  lng:-5.258,  conf:"H", year:2011, yconf:"K", note:"NREL SolarPACES (Palma del Río I)." },
+  { name:"PST SOLACOR 1",             cap:100.0, lat:37.957,  lng:-4.492,  conf:"H", year:2012, yconf:"K", note:"NREL SolarPACES. Capacity note: NREL 50 MW nameplate; 100 MW likely Solacor 1+2 combined." },
+  { name:"PUERTO ERRADO 2",           cap:30.0,  lat:38.278,  lng:-1.6,    conf:"H", year:2012, yconf:"K", note:"NREL SolarPACES (Puerto Errado 2)." },
+  { name:"SOLABEN 3",                  cap:200.0, lat:39.225,  lng:-5.391,  conf:"H", year:2012, yconf:"K", note:"NREL SolarPACES. Capacity note: NREL 50 MW nameplate; 200 MW likely combined Solaben 1+2+3+6." },
+  { name:"SOLUZ GUZMAN",              cap:49.9,  lat:37.152,  lng:-5.271,  conf:"H", year:2012, yconf:"K", note:"NREL SolarPACES (Guzmán)." },
+  { name:"TERMESOL 50",               cap:50.0,  lat:36.661,  lng:-5.847,  conf:"H", year:2011, yconf:"K", note:"NREL SolarPACES." },
+  { name:"TERMOSOL-2",                cap:99.8,  lat:39.193,  lng:-5.576,  conf:"H", year:2013, yconf:"K", note:"NREL SolarPACES. Capacity note: NREL 50 MW nameplate; 99.8 MW likely Termosol 1+2 combined." },
+  { name:"TERMOSOLAR BORGES",         cap:24.29, lat:41.529,  lng:0.8,     conf:"H", year:2012, yconf:"K", note:"NREL SolarPACES (Borges Termosolar). NREL nominal: 22.5 MW." },
+  { name:"Sanlúcar PS20",             cap:20.0,  lat:37.442,  lng:-6.25,   conf:"H", year:2009, yconf:"K", note:"NREL SolarPACES (PS20). Same site as PS10." },
+  { name:"Palma del Río II",          cap:50.0,  lat:37.645,  lng:-5.258,  conf:"H", year:2010, yconf:"K", note:"NREL SolarPACES. Same coords as Palma del Río I — adjacent plants." },
+  { name:"Solacor 2",                 cap:50.0,  lat:37.957,  lng:-4.492,  conf:"H", year:2012, yconf:"K", note:"NREL SolarPACES. Same site as Solacor 1." },
+  // ── CSP plants without NREL page but well-located ──
+  { name:"Arcosol CSP",               cap:49.9,  lat:36.661,  lng:-5.847,  conf:"H", year:2011, yconf:"K", note:"Valle I / Arcosol, San José del Valle. Same complex as Termesol 50." },
+  { name:"Arenales",                  cap:50.0,  lat:37.47,   lng:-5.73,   conf:"M", year:2012, yconf:"A", note:"Parabolic trough, near Carmona, Sevilla. Approx. coords." },
+  { name:"Aste 1B",                   cap:50.0,  lat:39.176,  lng:-3.234,  conf:"H", year:2012, yconf:"K", note:"Adjacent to ASTE 1A, Alcázar de San Juan." },
+  { name:"San José del Valle CSP",    cap:49.9,  lat:36.661,  lng:-5.847,  conf:"H", year:2011, yconf:"A", note:"Same site complex as Termesol 50/Arcosol." },
+  { name:"Ibersol CSP",               cap:50.0,  lat:38.71,   lng:-3.24,   conf:"M", year:2009, yconf:"A", note:"Puertollano area, Ciudad Real. Approx. coords." },
+  { name:"Gemasol",                   cap:19.9,  lat:37.562,  lng:-5.33,   conf:"H", year:2011, yconf:"K", note:"Likely same facility as Solar Tres/Gemasolar." },
+  { name:"Morón",                     cap:50.0,  lat:37.12,   lng:-5.45,   conf:"M", year:2012, yconf:"A", note:"Near Morón de la Frontera, Sevilla." },
+  { name:"Palma del Rio CSP",         cap:100.0, lat:37.645,  lng:-5.258,  conf:"H", year:2010, yconf:"K", note:"Palma del Río CSP complex (I+II). Same site as Palma del Río I/II." },
+  // ── LARGE PV PLANTS ──
+  { name:"Don Rodrigo",               cap:175.0, lat:37.1,    lng:-5.76,   conf:"M", year:2019, yconf:"K", note:"Near Utrera, Sevilla. One of largest PV plants in Spain at commissioning." },
+  { name:"Olmedilla",                 cap:60.0,  lat:39.7,    lng:-2.22,   conf:"M", year:2008, yconf:"K", note:"Near Olmedilla de Alarcón, Cuenca. Landmark early large-scale PV park." },
+  { name:"Puertollano",               cap:47.6,  lat:38.68,   lng:-4.11,   conf:"M", year:2008, yconf:"K", note:"Puertollano, Ciudad Real. Early large PV park." },
+  { name:"Dulcinea",                  cap:31.8,  lat:39.26,   lng:-3.12,   conf:"M", year:2009, yconf:"A", note:"La Mancha region, approx. coords." },
+  { name:"Arnedo",                    cap:30.0,  lat:42.22,   lng:-2.1,    conf:"M", year:2009, yconf:"A", note:"Arnedo, La Rioja. Approx. coords." },
+  { name:"SPEX",                      cap:30.0,  lat:38.9,    lng:-6.7,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Extremadura region estimated." },
+  { name:"Casas de Los Pinos",        cap:28.0,  lat:39.55,   lng:-2.34,   conf:"M", year:2008, yconf:"A", note:"Casas de los Pinos, Cuenca." },
+  { name:"Fuente Álamo",              cap:27.9,  lat:37.71,   lng:-1.18,   conf:"M", year:2008, yconf:"A", note:"Fuente Álamo, Murcia." },
+  { name:"La Corchuela",              cap:26.3,  lat:37.25,   lng:-5.93,   conf:"M", year:2008, yconf:"A", note:"Near Dos Hermanas, Sevilla." },
+  { name:"Calavéron",                 cap:21.2,  lat:38.9,    lng:-5.5,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Badajoz region estimated." },
+  { name:"Almaraz",                   cap:22.1,  lat:39.82,   lng:-5.7,    conf:"M", year:null, yconf:"U", note:"Near Almaraz, Cáceres." },
+  { name:"Beneixama",                 cap:20.0,  lat:38.77,   lng:-0.76,   conf:"M", year:2008, yconf:"A", note:"Beneixama, Alicante." },
+  { name:"Calasparra",                cap:20.0,  lat:38.23,   lng:-1.69,   conf:"M", year:null, yconf:"U", note:"Calasparra, Murcia." },
+  { name:"El Bonillo",                cap:20.0,  lat:38.95,   lng:-2.54,   conf:"M", year:null, yconf:"U", note:"El Bonillo, Albacete." },
+  { name:"El Cuervo Chico",           cap:20.0,  lat:36.91,   lng:-5.97,   conf:"M", year:null, yconf:"U", note:"Near El Cuervo de Sevilla, Sevilla." },
+  { name:"Hoya de Los Vicentes",      cap:20.0,  lat:38.5,    lng:-2.1,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Murcia/Albacete border region estimated." },
+  { name:"La Magascona",              cap:20.0,  lat:39.35,   lng:-5.9,    conf:"M", year:null, yconf:"U", note:"Near Montijo/Badajoz area, Extremadura." },
+  { name:"Abertura",                  cap:23.0,  lat:39.47,   lng:-5.98,   conf:"M", year:null, yconf:"U", note:"Abertura, Cáceres." },
+  { name:"Olivenza",                  cap:18.0,  lat:38.69,   lng:-7.1,    conf:"M", year:null, yconf:"U", note:"Olivenza, Badajoz. Note: distinct from PLANTA TERMOSOLAR DE OLIVENZA-1 (CSP)." },
+  { name:"Las Gabias S",              cap:18.0,  lat:37.12,   lng:-3.67,   conf:"M", year:2008, yconf:"A", note:"Las Gabias, Granada." },
+  { name:"Mahora",                    cap:15.0,  lat:39.22,   lng:-1.87,   conf:"M", year:null, yconf:"U", note:"Mahora, Albacete." },
+  { name:"Lucainena de las Torres",   cap:15.2,  lat:37.13,   lng:-2.12,   conf:"M", year:2008, yconf:"K", note:"Lucainena de las Torres, Almería. One of early PV parks." },
+  { name:"Don Quijote",               cap:15.2,  lat:39.2,    lng:-3.1,    conf:"M", year:null, yconf:"U", note:"La Mancha area, Ciudad Real." },
+  { name:"Fuente Álamo I",            cap:14.8,  lat:37.71,   lng:-1.18,   conf:"M", year:null, yconf:"U", note:"Fuente Álamo, Murcia. Part of Fuente Álamo complex." },
+  { name:"El Realengo",               cap:13.2,  lat:38.19,   lng:-1.01,   conf:"M", year:null, yconf:"U", note:"Near Crevillent, Alicante." },
+  { name:"Solten",                    cap:19.7,  lat:38.0,    lng:-1.2,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Murcia region estimated." },
+  { name:"Guadarranque",              cap:12.3,  lat:36.21,   lng:-5.44,   conf:"M", year:2008, yconf:"A", note:"San Roque, Cádiz." },
+  { name:"Lobosillo",                 cap:12.7,  lat:38.02,   lng:-1.18,   conf:"M", year:null, yconf:"U", note:"Lobosillo, Murcia." },
+  { name:"Requena",                   cap:12.0,  lat:39.49,   lng:-1.1,    conf:"M", year:null, yconf:"U", note:"Requena, Valencia." },
+  { name:"Hinojosa del Valle",        cap:12.0,  lat:38.46,   lng:-6.41,   conf:"M", year:null, yconf:"U", note:"Hinojosa del Valle, Badajoz." },
+  { name:"Alfarrasi",                 cap:10.6,  lat:38.87,   lng:-0.51,   conf:"M", year:null, yconf:"U", note:"Alfarrasí, Valencia." },
+  { name:"Benahadux",                 cap:10.6,  lat:36.93,   lng:-2.44,   conf:"M", year:null, yconf:"U", note:"Benahadux, Almería." },
+  { name:"El Carpio de Tajo",         cap:50.0,  lat:39.87,   lng:-4.48,   conf:"M", year:null, yconf:"U", note:"El Carpio de Tajo, Toledo." },
+  { name:"Picón I",                   cap:50.0,  lat:38.97,   lng:-4.05,   conf:"M", year:null, yconf:"U", note:"Near Picón, Ciudad Real." },
+  { name:"Picón II",                  cap:50.0,  lat:38.97,   lng:-4.05,   conf:"M", year:null, yconf:"U", note:"Near Picón, Ciudad Real. Adjacent to Picón I." },
+  // ── MEDIUM PV PLANTS ──
+  { name:"Abenójar",                  cap:5.2,   lat:38.89,   lng:-4.36,   conf:"M", year:null, yconf:"U", note:"Abenójar, Ciudad Real." },
+  { name:"Albacete Casa Grande",      cap:10.0,  lat:38.99,   lng:-1.86,   conf:"M", year:2008, yconf:"A", note:"Near Albacete." },
+  { name:"Albacete Tinajeros",        cap:10.0,  lat:39.0,    lng:-1.84,   conf:"M", year:2008, yconf:"A", note:"Tinajeros, near Albacete." },
+  { name:"Alange",                    cap:8.5,   lat:38.79,   lng:-6.23,   conf:"M", year:null, yconf:"U", note:"Alange, Badajoz." },
+  { name:"Alconchel",                 cap:10.0,  lat:38.52,   lng:-7.07,   conf:"M", year:null, yconf:"U", note:"Alconchel, Badajoz." },
+  { name:"Alconera",                  cap:7.3,   lat:38.52,   lng:-6.64,   conf:"M", year:null, yconf:"U", note:"Alconera, Badajoz." },
+  { name:"Alconera II",               cap:7.2,   lat:38.52,   lng:-6.64,   conf:"M", year:null, yconf:"U", note:"Alconera, Badajoz. Likely adjacent to Alconera I." },
+  { name:"Alcaudete",                 cap:7.2,   lat:37.59,   lng:-4.09,   conf:"M", year:null, yconf:"U", note:"Alcaudete, Jaén." },
+  { name:"Alcolea I+II",              cap:9.3,   lat:37.94,   lng:-4.75,   conf:"M", year:null, yconf:"U", note:"Alcolea, Córdoba." },
+  { name:"Aldea del Conde",           cap:6.2,   lat:39.4,    lng:-5.1,    conf:"L", year:null, yconf:"U", note:"Location uncertain." },
+  { name:"Ager",                      cap:11.3,  lat:41.98,   lng:0.77,    conf:"M", year:null, yconf:"U", note:"Àger, Lleida." },
+  { name:"Abona",                     cap:6.0,   lat:28.11,   lng:-16.57,  conf:"M", year:null, yconf:"U", note:"Abona, Tenerife, Canary Islands." },
+  { name:"Ablitas",                   cap:8.8,   lat:41.96,   lng:-1.65,   conf:"M", year:null, yconf:"U", note:"Ablitas, Navarra." },
+  { name:"Actiu Technological Park",  cap:5.2,   lat:38.77,   lng:-0.68,   conf:"M", year:null, yconf:"U", note:"Actiu industrial park, near Castalla, Alicante." },
+  { name:"Almodóvar del Campo",       cap:10.0,  lat:38.71,   lng:-4.17,   conf:"M", year:null, yconf:"U", note:"Almodóvar del Campo, Ciudad Real." },
+  { name:"Almodóvar del Río E",       cap:9.6,   lat:37.8,    lng:-5.01,   conf:"M", year:null, yconf:"U", note:"Almodóvar del Río, Córdoba." },
+  { name:"Almodóvar del Río W",       cap:9.6,   lat:37.8,    lng:-5.02,   conf:"M", year:null, yconf:"U", note:"Almodóvar del Río, Córdoba. Adjacent to E plant." },
+  { name:"Almonacid",                 cap:5.6,   lat:39.71,   lng:-3.64,   conf:"M", year:null, yconf:"U", note:"Almonacid de Toledo, Toledo." },
+  { name:"Almansa",                   cap:8.3,   lat:38.87,   lng:-1.09,   conf:"M", year:null, yconf:"U", note:"Almansa, Albacete." },
+  { name:"Alvarado",                  cap:5.7,   lat:38.87,   lng:-6.79,   conf:"M", year:null, yconf:"U", note:"Alvarado, Badajoz." },
+  { name:"Arbante",                   cap:8.8,   lat:38.5,    lng:-6.9,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Badajoz region estimated." },
+  { name:"Archidona",                 cap:7.3,   lat:37.1,    lng:-4.39,   conf:"M", year:null, yconf:"U", note:"Archidona, Málaga." },
+  { name:"Arguedas III",              cap:7.1,   lat:42.17,   lng:-1.6,    conf:"M", year:null, yconf:"U", note:"Arguedas, Navarra." },
+  { name:"Arico",                     cap:6.6,   lat:28.16,   lng:-16.48,  conf:"M", year:null, yconf:"U", note:"Arico, Tenerife, Canary Islands." },
+  { name:"Ataquines A",               cap:4.0,   lat:41.22,   lng:-4.84,   conf:"M", year:null, yconf:"U", note:"Ataquines, Valladolid." },
+  { name:"Atzeneta",                  cap:5.7,   lat:40.2,    lng:-0.19,   conf:"M", year:null, yconf:"U", note:"Atzeneta del Maestrat, Castellón." },
+  { name:"Azonilla",                  cap:8.0,   lat:42.54,   lng:-5.69,   conf:"M", year:null, yconf:"U", note:"Onzonilla, León." },
+  { name:"Bardenas",                  cap:10.1,  lat:42.17,   lng:-1.55,   conf:"M", year:null, yconf:"U", note:"Near Bardenas Reales, Navarra." },
+  { name:"Bargas",                    cap:5.2,   lat:39.93,   lng:-4.02,   conf:"M", year:null, yconf:"U", note:"Bargas, Toledo." },
+  { name:"Belmez",                    cap:10.9,  lat:38.27,   lng:-5.21,   conf:"M", year:null, yconf:"U", note:"Belmez, Córdoba." },
+  { name:"Blanca",                    cap:7.0,   lat:38.18,   lng:-1.37,   conf:"M", year:null, yconf:"U", note:"Blanca, Murcia." },
+  { name:"Bonete",                    cap:5.7,   lat:38.64,   lng:-1.35,   conf:"M", year:null, yconf:"U", note:"Bonete, Albacete." },
+  { name:"Bullas",                    cap:5.0,   lat:37.89,   lng:-1.67,   conf:"M", year:null, yconf:"U", note:"Bullas, Murcia." },
+  { name:"Calzada de Calatrava",      cap:10.0,  lat:38.7,    lng:-3.82,   conf:"M", year:null, yconf:"U", note:"Calzada de Calatrava, Ciudad Real." },
+  { name:"Camino del Cementerio A",   cap:8.0,   lat:38.7,    lng:-4.0,    conf:"L", year:null, yconf:"U", note:"Location uncertain." },
+  { name:"Campo Lugar",               cap:4.8,   lat:39.38,   lng:-5.86,   conf:"M", year:null, yconf:"U", note:"Campo Lugar, Cáceres." },
+  { name:"Campollano",                cap:5.6,   lat:38.96,   lng:-1.91,   conf:"M", year:null, yconf:"U", note:"Campollano industrial park, Albacete." },
+  { name:"Cantillana",                cap:5.7,   lat:37.6,    lng:-5.82,   conf:"M", year:null, yconf:"U", note:"Cantillana, Sevilla." },
+  { name:"Carmona",                   cap:6.1,   lat:37.47,   lng:-5.64,   conf:"M", year:null, yconf:"U", note:"Carmona, Sevilla." },
+  { name:"Casas Coloradas",           cap:7.1,   lat:38.8,    lng:-3.0,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Castilla-La Mancha estimated." },
+  { name:"Casas Ibañez",              cap:5.1,   lat:39.29,   lng:-1.49,   conf:"M", year:null, yconf:"U", note:"Casas Ibáñez, Albacete." },
+  { name:"Casas de Don Pedro",        cap:7.0,   lat:38.98,   lng:-5.04,   conf:"M", year:null, yconf:"U", note:"Casas de Don Pedro, Badajoz." },
+  { name:"Casatejada",                cap:11.3,  lat:39.87,   lng:-5.65,   conf:"M", year:null, yconf:"U", note:"Casatejada, Cáceres." },
+  { name:"Castejon",                  cap:5.2,   lat:42.17,   lng:-1.7,    conf:"M", year:null, yconf:"U", note:"Castejón, Navarra." },
+  { name:"Castelnou",                 cap:6.0,   lat:41.26,   lng:-0.28,   conf:"M", year:null, yconf:"U", note:"Castelnou, Teruel." },
+  { name:"Castuera",                  cap:5.4,   lat:38.72,   lng:-5.54,   conf:"M", year:null, yconf:"U", note:"Castuera, Badajoz." },
+  { name:"Cieza IGS",                 cap:5.9,   lat:38.24,   lng:-1.42,   conf:"M", year:null, yconf:"U", note:"Cieza, Murcia." },
+  { name:"Corella",                   cap:10.9,  lat:42.12,   lng:-1.78,   conf:"M", year:null, yconf:"U", note:"Corella, Navarra." },
+  { name:"Cortijo Viejo",             cap:10.0,  lat:37.5,    lng:-5.5,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Sevilla region estimated." },
+  { name:"Cáceres",                   cap:10.7,  lat:39.48,   lng:-6.37,   conf:"M", year:null, yconf:"U", note:"Near Cáceres city." },
+  { name:"Daimiel",                   cap:5.0,   lat:38.92,   lng:-3.61,   conf:"M", year:null, yconf:"U", note:"Daimiel, Ciudad Real." },
+  { name:"Darro AES",                 cap:5.9,   lat:37.33,   lng:-3.22,   conf:"M", year:null, yconf:"U", note:"Darro, Granada." },
+  { name:"Darro Epuron",              cap:5.9,   lat:37.33,   lng:-3.22,   conf:"M", year:null, yconf:"U", note:"Darro, Granada. Adjacent to Darro AES." },
+  { name:"El Bailadero",              cap:9.0,   lat:37.6,    lng:-5.85,   conf:"L", year:null, yconf:"U", note:"Location uncertain." },
+  { name:"El Coronil",                cap:16.6,  lat:37.08,   lng:-5.63,   conf:"M", year:null, yconf:"U", note:"El Coronil, Sevilla." },
+  { name:"El Coronil I",              cap:10.1,  lat:37.08,   lng:-5.63,   conf:"M", year:null, yconf:"U", note:"El Coronil, Sevilla." },
+  { name:"El Coronil II",             cap:10.2,  lat:37.08,   lng:-5.63,   conf:"M", year:null, yconf:"U", note:"El Coronil, Sevilla. Adjacent to El Coronil I." },
+  { name:"El Escambron",              cap:4.7,   lat:38.4,    lng:-0.5,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Valencia region estimated." },
+  { name:"Elduayen",                  cap:11.5,  lat:43.21,   lng:-2.03,   conf:"M", year:null, yconf:"U", note:"Elduain area, Gipuzkoa, Basque Country." },
+  { name:"Eruela",                    cap:7.0,   lat:39.3,    lng:-5.8,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Extremadura estimated." },
+  { name:"Espartosa",                 cap:4.7,   lat:37.8,    lng:-6.1,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Huelva region estimated." },
+  { name:"Extremasol",                cap:10.0,  lat:38.8,    lng:-6.5,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Extremadura estimated." },
+  { name:"Finca Verde",               cap:9.0,   lat:38.0,    lng:-5.5,    conf:"L", year:null, yconf:"U", note:"Location uncertain." },
+  { name:"Fontellas",                 cap:8.8,   lat:42.01,   lng:-1.6,    conf:"M", year:null, yconf:"U", note:"Fontellas, Navarra." },
+  { name:"Fontiveros",                cap:10.0,  lat:40.97,   lng:-4.97,   conf:"M", year:null, yconf:"U", note:"Fontiveros, Ávila." },
+  { name:"Fuenmayor",                 cap:9.9,   lat:42.47,   lng:-2.56,   conf:"M", year:null, yconf:"U", note:"Fuenmayor, La Rioja." },
+  { name:"Fuente Palmera",            cap:6.1,   lat:37.71,   lng:-5.11,   conf:"M", year:null, yconf:"U", note:"Fuente Palmera, Córdoba." },
+  { name:"Fuente Álamo II",           cap:8.9,   lat:37.71,   lng:-1.18,   conf:"M", year:null, yconf:"U", note:"Fuente Álamo, Murcia. Part of Fuente Álamo complex." },
+  { name:"Fuentes de Valdepero",      cap:4.5,   lat:41.95,   lng:-4.48,   conf:"M", year:null, yconf:"U", note:"Fuentes de Valdepero, Palencia." },
+  { name:"Fustiñana III",             cap:5.4,   lat:42.04,   lng:-1.51,   conf:"M", year:null, yconf:"U", note:"Fustiñana, Navarra." },
+  { name:"General Motors",            cap:11.8,  lat:41.52,   lng:1.9,     conf:"M", year:null, yconf:"U", note:"GM plant rooftop/adjacent, Zaragoza or Barcelona area." },
+  { name:"Girasol",                   cap:5.0,   lat:38.5,    lng:-5.0,    conf:"L", year:null, yconf:"U", note:"Location uncertain." },
+  { name:"Hellin I+II",               cap:8.0,   lat:38.51,   lng:-1.69,   conf:"M", year:null, yconf:"U", note:"Hellín, Albacete." },
+  { name:"Hinojar",                   cap:5.5,   lat:37.69,   lng:-2.15,   conf:"M", year:null, yconf:"U", note:"Híjar area / Murcia." },
+  { name:"Hinojos",                   cap:9.5,   lat:37.28,   lng:-6.39,   conf:"M", year:null, yconf:"U", note:"Hinojos, Huelva." },
+  { name:"Iniesta",                   cap:5.0,   lat:39.46,   lng:-1.76,   conf:"M", year:null, yconf:"U", note:"Iniesta, Cuenca." },
+  { name:"Isla Mayor",                cap:8.4,   lat:37.09,   lng:-6.11,   conf:"M", year:null, yconf:"U", note:"Isla Mayor, Sevilla." },
+  { name:"Jerez de la Frontera",      cap:5.6,   lat:36.68,   lng:-6.14,   conf:"M", year:null, yconf:"U", note:"Jerez de la Frontera, Cádiz." },
+  { name:"L'Olleria and Garrofera",   cap:7.0,   lat:38.89,   lng:-0.57,   conf:"M", year:null, yconf:"U", note:"L'Olleria, Valencia." },
+  { name:"La Flamenca",               cap:7.2,   lat:38.1,    lng:-0.87,   conf:"M", year:null, yconf:"U", note:"Near Orihuela, Alicante." },
+  { name:"La Herrera 160",            cap:4.8,   lat:38.57,   lng:-1.28,   conf:"M", year:null, yconf:"U", note:"La Herrera, Albacete." },
+  { name:"La Magasquila",             cap:10.0,  lat:39.35,   lng:-5.9,    conf:"M", year:null, yconf:"U", note:"Near Montijo, Badajoz. Adjacent to La Magascona." },
+  { name:"La Olmeda",                 cap:6.0,   lat:40.3,    lng:-3.3,    conf:"L", year:null, yconf:"U", note:"Location uncertain." },
+  { name:"La Puente de Piedra",       cap:11.2,  lat:41.25,   lng:-1.37,   conf:"M", year:null, yconf:"U", note:"Near Cariñena area, Zaragoza." },
+  { name:"La Quintana",               cap:9.8,   lat:38.7,    lng:-5.9,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Badajoz estimated." },
+  { name:"La Rambla",                 cap:5.7,   lat:37.61,   lng:-4.74,   conf:"M", year:null, yconf:"U", note:"La Rambla, Córdoba." },
+  { name:"La Solana",                 cap:6.6,   lat:38.94,   lng:-3.24,   conf:"M", year:null, yconf:"U", note:"La Solana, Ciudad Real." },
+  { name:"La Veguilla",               cap:9.4,   lat:38.9,    lng:-5.7,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Badajoz estimated." },
+  { name:"Las Cabezas de San Juan",   cap:5.7,   lat:36.97,   lng:-5.94,   conf:"M", year:null, yconf:"U", note:"Las Cabezas de San Juan, Sevilla." },
+  { name:"Las Gabias N",              cap:10.0,  lat:37.12,   lng:-3.67,   conf:"M", year:2008, yconf:"A", note:"Las Gabias, Granada." },
+  { name:"Lasesa",                    cap:9.0,   lat:41.94,   lng:-0.35,   conf:"M", year:null, yconf:"U", note:"Lalueza/Sariñena area, Huesca." },
+  { name:"Lazagurría",                cap:4.0,   lat:42.46,   lng:-2.29,   conf:"M", year:null, yconf:"U", note:"Lazagurría, Navarra." },
+  { name:"Lebrija 3+4",               cap:7.1,   lat:37.0,    lng:-6.04,   conf:"M", year:null, yconf:"U", note:"Lebrija, Sevilla. Adjacent to PST Lebrija I." },
+  { name:"Llerena I",                 cap:4.8,   lat:38.24,   lng:-6.02,   conf:"M", year:null, yconf:"U", note:"Llerena, Badajoz." },
+  { name:"Logrosán",                  cap:5.0,   lat:39.34,   lng:-5.49,   conf:"M", year:null, yconf:"U", note:"Logrosán, Cáceres." },
+  { name:"Los Navalmorales",          cap:6.6,   lat:39.71,   lng:-4.66,   conf:"M", year:null, yconf:"U", note:"Los Navalmorales, Toledo." },
+  { name:"Los Olivares",              cap:9.1,   lat:37.15,   lng:-3.56,   conf:"M", year:null, yconf:"U", note:"Los Olivares, Granada." },
+  { name:"Losa del Obispo",           cap:7.4,   lat:39.72,   lng:-0.91,   conf:"M", year:null, yconf:"U", note:"Losa del Obispo, Valencia." },
+  { name:"Madridejos",                cap:8.8,   lat:39.47,   lng:-3.53,   conf:"M", year:null, yconf:"U", note:"Madridejos, Toledo." },
+  { name:"Magacela",                  cap:10.9,  lat:38.88,   lng:-5.72,   conf:"M", year:null, yconf:"U", note:"Magacela, Badajoz." },
+  { name:"Magec de Abona",            cap:6.3,   lat:28.11,   lng:-16.57,  conf:"M", year:null, yconf:"U", note:"Abona area, Tenerife, Canary Islands." },
+  { name:"Malagón",                   cap:8.0,   lat:39.19,   lng:-3.86,   conf:"M", year:null, yconf:"U", note:"Malagón, Ciudad Real." },
+  { name:"Malpartida de Cáceres",     cap:10.0,  lat:39.44,   lng:-6.49,   conf:"M", year:null, yconf:"U", note:"Malpartida de Cáceres, Cáceres." },
+  { name:"Manzanares",                cap:6.0,   lat:39.0,    lng:-3.37,   conf:"M", year:null, yconf:"U", note:"Manzanares, Ciudad Real." },
+  { name:"Mazarrón",                  cap:6.3,   lat:37.6,    lng:-1.32,   conf:"M", year:null, yconf:"U", note:"Mazarrón, Murcia." },
+  { name:"Mazarrón Conergy",          cap:5.2,   lat:37.6,    lng:-1.32,   conf:"M", year:null, yconf:"U", note:"Mazarrón, Murcia. Adjacent to Mazarrón." },
+  { name:"Medina",                    cap:7.1,   lat:36.45,   lng:-5.77,   conf:"M", year:null, yconf:"U", note:"Medina Sidonia, Cádiz." },
+  { name:"Mendavia",                  cap:4.0,   lat:42.44,   lng:-2.16,   conf:"M", year:null, yconf:"U", note:"Mendavia, Navarra." },
+  { name:"Moclinejo",                 cap:7.0,   lat:36.74,   lng:-4.22,   conf:"M", year:null, yconf:"U", note:"Moclinejo, Málaga." },
+  { name:"Moraleja",                  cap:4.8,   lat:40.07,   lng:-6.67,   conf:"M", year:null, yconf:"U", note:"Moraleja, Cáceres." },
+  { name:"Moratalla",                 cap:10.0,  lat:38.18,   lng:-1.88,   conf:"M", year:null, yconf:"U", note:"Moratalla, Murcia." },
+  { name:"Morita",                    cap:8.7,   lat:38.5,    lng:-6.5,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Badajoz estimated." },
+  { name:"Olmedilla de Alarcón",      cap:10.0,  lat:39.69,   lng:-2.24,   conf:"M", year:2008, yconf:"A", note:"Olmedilla de Alarcón, Cuenca. Near main Olmedilla park." },
+  { name:"Olmedilla de Alarcón 6MW",  cap:6.0,   lat:39.69,   lng:-2.24,   conf:"M", year:2008, yconf:"A", note:"Olmedilla de Alarcón, Cuenca. Second installation." },
+  { name:"Olmeda de la Cuesta",       cap:7.6,   lat:40.13,   lng:-2.35,   conf:"M", year:null, yconf:"U", note:"Olmeda de la Cuesta, Cuenca." },
+  { name:"Pereruela",                 cap:9.9,   lat:41.43,   lng:-5.89,   conf:"M", year:null, yconf:"U", note:"Pereruela, Zamora." },
+  { name:"Pitiegua",                  cap:4.9,   lat:41.06,   lng:-5.42,   conf:"M", year:null, yconf:"U", note:"Pitiegua, Salamanca." },
+  { name:"Plasencia",                 cap:4.0,   lat:40.03,   lng:-6.09,   conf:"M", year:null, yconf:"U", note:"Plasencia, Cáceres." },
+  { name:"Pozal de Gallinas",         cap:4.5,   lat:41.38,   lng:-4.79,   conf:"M", year:null, yconf:"U", note:"Pozal de Gallinas, Valladolid." },
+  { name:"Pozohondo I",               cap:4.0,   lat:38.59,   lng:-1.96,   conf:"M", year:null, yconf:"U", note:"Pozohondo, Albacete." },
+  { name:"Pozohondo II",              cap:5.1,   lat:38.59,   lng:-1.96,   conf:"M", year:null, yconf:"U", note:"Pozohondo, Albacete." },
+  { name:"Puebla de Almoradiel",      cap:11.8,  lat:39.6,    lng:-3.09,   conf:"M", year:null, yconf:"U", note:"La Puebla de Almoradiel, Toledo." },
+  { name:"Quintanilla",               cap:9.5,   lat:38.9,    lng:-5.8,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Badajoz estimated." },
+  { name:"Ramón Escriche",            cap:8.0,   lat:40.74,   lng:-0.66,   conf:"M", year:null, yconf:"U", note:"Near Híjar, Teruel." },
+  { name:"Rota",                      cap:5.0,   lat:36.62,   lng:-6.36,   conf:"M", year:null, yconf:"U", note:"Rota, Cádiz." },
+  { name:"Saelices",                  cap:11.3,  lat:39.93,   lng:-2.83,   conf:"M", year:null, yconf:"U", note:"Saelices, Cuenca." },
+  { name:"Sanlúcar la Mayor A",       cap:7.0,   lat:37.44,   lng:-6.25,   conf:"M", year:null, yconf:"U", note:"Sanlúcar la Mayor, Sevilla." },
+  { name:"Sariñena A",                cap:4.0,   lat:41.79,   lng:-0.17,   conf:"M", year:null, yconf:"U", note:"Sariñena, Huesca." },
+  { name:"Seat al Sol",               cap:11.0,  lat:41.31,   lng:1.99,    conf:"M", year:null, yconf:"U", note:"SEAT factory, Martorell, Barcelona." },
+  { name:"Sierresita",                cap:10.0,  lat:37.9,    lng:-6.0,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Huelva/Sevilla border estimated." },
+  { name:"Solten I",                  cap:13.0,  lat:38.0,    lng:-1.2,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Murcia region estimated." },
+  { name:"Solten II",                 cap:11.0,  lat:38.0,    lng:-1.2,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Murcia region estimated." },
+  { name:"Talayuela 1",               cap:10.0,  lat:39.97,   lng:-5.54,   conf:"M", year:null, yconf:"U", note:"Talayuela, Cáceres." },
+  { name:"Tordesillas",               cap:10.0,  lat:41.5,    lng:-5.0,    conf:"M", year:null, yconf:"U", note:"Tordesillas, Valladolid." },
+  { name:"Torrealvilla A",            cap:7.0,   lat:37.97,   lng:-1.74,   conf:"M", year:null, yconf:"U", note:"Near Lorca, Murcia." },
+  { name:"Torrealvilla B",            cap:4.0,   lat:37.97,   lng:-1.74,   conf:"M", year:null, yconf:"U", note:"Near Lorca, Murcia." },
+  { name:"Torrealvilla I",            cap:6.4,   lat:37.97,   lng:-1.74,   conf:"M", year:null, yconf:"U", note:"Near Lorca, Murcia." },
+  { name:"Torrealvilla II",           cap:6.8,   lat:37.97,   lng:-1.74,   conf:"M", year:null, yconf:"U", note:"Near Lorca, Murcia." },
+  { name:"Trajano A",                 cap:6.3,   lat:38.87,   lng:-6.82,   conf:"M", year:null, yconf:"U", note:"Near Mérida area, Badajoz." },
+  { name:"Trujillo A",                cap:7.0,   lat:39.46,   lng:-5.88,   conf:"M", year:null, yconf:"U", note:"Trujillo, Cáceres." },
+  { name:"Valdecaballeros",           cap:10.0,  lat:39.23,   lng:-5.15,   conf:"M", year:null, yconf:"U", note:"Valdecaballeros, Badajoz." },
+  { name:"Valdecaballeros Tracker",   cap:5.1,   lat:39.23,   lng:-5.15,   conf:"M", year:null, yconf:"U", note:"Valdecaballeros, Badajoz. Tracking variant." },
+  { name:"Valdelaguna",               cap:11.0,  lat:40.12,   lng:-3.4,    conf:"M", year:null, yconf:"U", note:"Valdelaguna, Madrid." },
+  { name:"Valtierra",                 cap:12.4,  lat:42.19,   lng:-1.57,   conf:"M", year:null, yconf:"U", note:"Valtierra, Navarra." },
+  { name:"Valtierra II",              cap:5.9,   lat:42.19,   lng:-1.57,   conf:"M", year:null, yconf:"U", note:"Valtierra, Navarra. Adjacent to Valtierra." },
+  { name:"Valverdon",                 cap:5.5,   lat:41.03,   lng:-5.75,   conf:"M", year:null, yconf:"U", note:"Valverdón, Salamanca." },
+  { name:"Vejer de la Frontera",      cap:10.0,  lat:36.25,   lng:-5.97,   conf:"M", year:null, yconf:"U", note:"Vejer de la Frontera, Cádiz." },
+  { name:"Villabrázaro",              cap:5.5,   lat:42.01,   lng:-5.83,   conf:"M", year:null, yconf:"U", note:"Villabrázaro, Zamora." },
+  { name:"Villafranca",               cap:7.8,   lat:41.35,   lng:1.7,     conf:"M", year:null, yconf:"U", note:"Villafranca del Penedès, Barcelona." },
+  { name:"Villafranca II",            cap:4.1,   lat:41.35,   lng:1.7,     conf:"M", year:null, yconf:"U", note:"Villafranca del Penedès, Barcelona. Adjacent." },
+  { name:"Villaldelmiro",             cap:5.0,   lat:42.37,   lng:-3.88,   conf:"M", year:null, yconf:"U", note:"Villaldelmiro, Burgos." },
+  { name:"Villanueva de Serena",      cap:10.9,  lat:38.97,   lng:-5.8,    conf:"M", year:null, yconf:"U", note:"Villanueva de la Serena, Badajoz." },
+  { name:"Villanueva de la Jara",     cap:5.2,   lat:39.43,   lng:-1.92,   conf:"M", year:null, yconf:"U", note:"Villanueva de la Jara, Cuenca." },
+  { name:"Villar de Cañas",           cap:9.8,   lat:39.69,   lng:-2.39,   conf:"M", year:null, yconf:"U", note:"Villar de Cañas, Cuenca." },
+  { name:"Villaverde",                cap:5.0,   lat:40.35,   lng:-3.71,   conf:"M", year:null, yconf:"U", note:"Villaverde, Madrid." },
+  { name:"Vinaceite",                 cap:8.7,   lat:41.24,   lng:-0.43,   conf:"M", year:null, yconf:"U", note:"Vinaceite, Teruel." },
+  { name:"Yecla",                     cap:7.6,   lat:38.62,   lng:-1.12,   conf:"M", year:null, yconf:"U", note:"Yecla, Murcia." },
+  { name:"Zaratán",                   cap:9.0,   lat:41.65,   lng:-4.81,   conf:"M", year:null, yconf:"U", note:"Zaratán, Valladolid." },
+  { name:"Zarza",                     cap:7.6,   lat:39.8,    lng:-5.8,    conf:"L", year:null, yconf:"U", note:"Location uncertain. Cáceres estimated." },
+  { name:"Zuera I",                   cap:9.0,   lat:41.87,   lng:-0.79,   conf:"M", year:null, yconf:"U", note:"Zuera, Zaragoza." },
+  { name:"Zuera II",                  cap:9.9,   lat:41.87,   lng:-0.79,   conf:"M", year:null, yconf:"U", note:"Zuera, Zaragoza. Adjacent to Zuera I." },
+  { name:"Zújar",                     cap:7.0,   lat:37.55,   lng:-2.88,   conf:"M", year:null, yconf:"U", note:"Zújar, Granada." },
+];
+
+const maxCap = Math.max(...plants.map(p => p.cap));
+
+function round1(v) { return Math.round(v * 10) / 10; }
+
+function yearBadge(y, yc) {
+  if (!y) return `<span class="year-badge year-unknown">Unknown</span>`;
+  if (yc === "K") return `<span class="year-badge year-known">${y}</span>`;
+  return `<span class="year-badge year-approx">~${y}</span>`;
+}
+
+function confDot(c) {
+  const cls = c === "H" ? "conf-high" : c === "M" ? "conf-med" : "conf-low";
+  const label = c === "H" ? "Confirmed" : c === "M" ? "Approx" : "Estimated";
+  return `<span class="conf-dot ${cls}"></span>${label}`;
+}
+
+function renderRows(data) {
+  const tbody = document.getElementById('tableBody');
+  tbody.innerHTML = data.map(p => {
+    const barW = Math.round((p.cap / maxCap) * 80);
+    return `<tr>
+      <td class="name-col">${p.name}</td>
+      <td class="cap-col">
+        <div class="cap-bar-wrap">
+          <div class="cap-bar" style="width:${barW}px"></div>
+          ${p.cap.toFixed(1)}
+        </div>
+      </td>
+      <td class="coord-full">${p.lat.toFixed(3)}</td>
+      <td class="coord-full">${p.lng.toFixed(3)}</td>
+      <td class="coord-round">${round1(p.lat).toFixed(1)}</td>
+      <td class="coord-round">${round1(p.lng).toFixed(1)}</td>
+      <td style="font-size:11px">${confDot(p.conf)}</td>
+      <td class="year-col">${yearBadge(p.year, p.yconf)}</td>
+      <td class="note-col">${p.note}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('rowCount').textContent = `Showing ${data.length} of ${plants.length} plants`;
+}
+
+let currentData = [...plants];
+
+function applyFilter() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  currentData = plants.filter(p => p.name.toLowerCase().includes(q));
+  applySort();
+}
+
+let sortField = 'name', sortDir = 1;
+function sortBy(field) {
+  if (sortField === field) sortDir *= -1;
+  else { sortField = field; sortDir = 1; }
+  document.getElementById('sortSelect').value = '';
+  applySort();
+}
+
+function applySort() {
+  const sel = document.getElementById('sortSelect').value;
+  if (sel === 'name-asc')  { sortField='name'; sortDir=1; }
+  if (sel === 'cap-desc')  { sortField='cap';  sortDir=-1; }
+  if (sel === 'cap-asc')   { sortField='cap';  sortDir=1; }
+  if (sel === 'year-asc')  { sortField='year'; sortDir=1; }
+
+  currentData.sort((a, b) => {
+    let av = a[sortField], bv = b[sortField];
+    if (sortField === 'name') return av.localeCompare(bv) * sortDir;
+    if (av === null) av = sortDir > 0 ? Infinity : -Infinity;
+    if (bv === null) bv = sortDir > 0 ? Infinity : -Infinity;
+    return (av - bv) * sortDir;
+  });
+  renderRows(currentData);
+}
+
+document.getElementById('searchInput').addEventListener('input', applyFilter);
+
+// Initial render
+renderRows(plants);
+</script>
+</body>
+</html>
