@@ -19,3 +19,8 @@ envs/
 caceres_analysis/models/
 *.ckpt
 lightning_logs/
+
+# Large data files — stored on Hugging Face
+spain_total/era5_timeseries_plants/
+spain_total/era5_gridpoint_cache/
+spain_total/era5_download_errors.txt
