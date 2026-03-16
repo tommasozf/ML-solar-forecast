@@ -1,0 +1,100 @@
+{
+  "split_boundaries": {
+    "train": [
+      "2023-01-01 00:00:00",
+      "2024-12-31 23:00:00"
+    ],
+    "val": [
+      "2025-01-01 00:00:00",
+      "2025-06-30 23:00:00"
+    ],
+    "test": [
+      "2025-07-01 00:00:00",
+      "2025-12-31 23:00:00"
+    ]
+  },
+  "target_column": "pv_generation_mwh",
+  "features_to_scale": [
+    "dewpoint_2m_C",
+    "temperature_2m_C",
+    "surface_pressure_hPa",
+    "total_precip_mm",
+    "ssrd_wm2",
+    "strd_wm2",
+    "solar_zenith",
+    "solar_azimuth",
+    "clearsky_ghi",
+    "kt",
+    "dewpoint_depression_C"
+  ],
+  "cyclical_features": [
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos",
+    "doy_sin",
+    "doy_cos"
+  ],
+  "train_means": {
+    "dewpoint_2m_C": 6.734149333667958,
+    "temperature_2m_C": 15.559660976960865,
+    "surface_pressure_hPa": 953.8799115529221,
+    "total_precip_mm": 0.04509155015683114,
+    "ssrd_wm2": 198.83522160862452,
+    "strd_wm2": 314.0033927240879,
+    "solar_zenith": 89.68523199672842,
+    "solar_azimuth": 181.806476991275,
+    "clearsky_ghi": 217.67387978483947,
+    "kt": 0.44610571181058156,
+    "dewpoint_depression_C": 8.825511643292907
+  },
+  "train_stds": {
+    "dewpoint_2m_C": 5.657786800743663,
+    "temperature_2m_C": 8.383568136661742,
+    "surface_pressure_hPa": 6.8528509886550655,
+    "total_precip_mm": 0.19255794235036167,
+    "ssrd_wm2": 274.2086247721228,
+    "strd_wm2": 44.21373919717669,
+    "solar_zenith": 35.52547149807143,
+    "solar_azimuth": 100.0411890069614,
+    "clearsky_ghi": 293.95478833272074,
+    "kt": 0.5074549290269929,
+    "dewpoint_depression_C": 6.610731168970073
+  },
+  "target_mean": 335.7785800273598,
+  "target_std": 443.4559740154528,
+  "dropped_columns": [
+    "clearsky_dni",
+    "clearsky_dhi"
+  ],
+  "feature_classification": {
+    "known_future": [
+      "hour_sin",
+      "hour_cos",
+      "month_sin",
+      "month_cos",
+      "doy_sin",
+      "doy_cos",
+      "solar_zenith",
+      "solar_azimuth",
+      "clearsky_ghi"
+    ],
+    "observed": [
+      "dewpoint_2m_C",
+      "temperature_2m_C",
+      "surface_pressure_hPa",
+      "total_precip_mm",
+      "ssrd_wm2",
+      "strd_wm2",
+      "kt",
+      "dewpoint_depression_C"
+    ],
+    "target": [
+      "pv_generation_mwh"
+    ]
+  },
+  "night_outlier_params": {
+    "zenith_threshold": 95,
+    "generation_threshold_mwh": 0.1
+  }
+}
