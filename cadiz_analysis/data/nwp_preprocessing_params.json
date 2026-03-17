@@ -1,0 +1,128 @@
+{
+  "split_boundaries": {
+    "train": [
+      "2023-01-01 00:00:00",
+      "2024-12-31 23:00:00"
+    ],
+    "val": [
+      "2025-01-01 00:00:00",
+      "2025-06-30 23:00:00"
+    ],
+    "test": [
+      "2025-07-01 00:00:00",
+      "2025-12-31 23:00:00"
+    ]
+  },
+  "target_column": "pv_generation_mwh",
+  "features_to_scale": [
+    "dewpoint_2m_C",
+    "temperature_2m_C",
+    "surface_pressure_hPa",
+    "total_precip_mm",
+    "ssrd_wm2",
+    "strd_wm2",
+    "solar_zenith",
+    "solar_azimuth",
+    "clearsky_ghi",
+    "kt",
+    "dewpoint_depression_C",
+    "ssrd_wm2_forecast",
+    "temperature_2m_C_forecast",
+    "dewpoint_2m_C_forecast",
+    "surface_pressure_hPa_forecast",
+    "total_precip_mm_forecast",
+    "kt_forecast",
+    "dewpoint_depression_C_forecast"
+  ],
+  "cyclical_features": [
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos",
+    "doy_sin",
+    "doy_cos"
+  ],
+  "train_means": {
+    "dewpoint_2m_C": 12.364902671527174,
+    "temperature_2m_C": 19.17164333256475,
+    "surface_pressure_hPa": 1009.3286353425016,
+    "total_precip_mm": 0.05176865119236902,
+    "ssrd_wm2": 218.7260148988106,
+    "strd_wm2": 335.37231052166925,
+    "solar_zenith": 89.70388746423832,
+    "solar_azimuth": 181.39202085015708,
+    "clearsky_ghi": 244.75862423165287,
+    "kt": 0.43768357775862554,
+    "dewpoint_depression_C": 6.8067406610375745,
+    "ssrd_wm2_forecast": 216.60714748119125,
+    "temperature_2m_C_forecast": 18.80634080922315,
+    "dewpoint_2m_C_forecast": 12.569674987898166,
+    "surface_pressure_hPa_forecast": 1011.9365399620885,
+    "total_precip_mm_forecast": 0.052479323028555985,
+    "kt_forecast": 0.4051831288764943,
+    "dewpoint_depression_C_forecast": 6.2366658213249835
+  },
+  "train_stds": {
+    "dewpoint_2m_C": 4.478686108525916,
+    "temperature_2m_C": 6.352253265729167,
+    "surface_pressure_hPa": 5.743789981792114,
+    "total_precip_mm": 0.27719206633037424,
+    "ssrd_wm2": 296.9076857027858,
+    "strd_wm2": 35.25957783923933,
+    "solar_zenith": 37.839518790252924,
+    "solar_azimuth": 100.21185472388453,
+    "clearsky_ghi": 320.5504400814582,
+    "kt": 0.5027566251630355,
+    "dewpoint_depression_C": 5.222712853404467,
+    "ssrd_wm2_forecast": 295.250556813027,
+    "temperature_2m_C_forecast": 6.351634295118223,
+    "dewpoint_2m_C_forecast": 4.786147313525465,
+    "surface_pressure_hPa_forecast": 5.7234414009407795,
+    "total_precip_mm_forecast": 0.3168204537126159,
+    "kt_forecast": 0.46505728327326756,
+    "dewpoint_depression_C_forecast": 4.964238994929368
+  },
+  "target_mean": 228.70840281577748,
+  "target_std": 301.41960762423923,
+  "dropped_columns": [
+    "clearsky_dni",
+    "clearsky_dhi"
+  ],
+  "feature_classification": {
+    "known_future": [
+      "hour_sin",
+      "hour_cos",
+      "month_sin",
+      "month_cos",
+      "doy_sin",
+      "doy_cos",
+      "solar_zenith",
+      "solar_azimuth",
+      "clearsky_ghi",
+      "ssrd_wm2_forecast",
+      "temperature_2m_C_forecast",
+      "dewpoint_2m_C_forecast",
+      "surface_pressure_hPa_forecast",
+      "total_precip_mm_forecast",
+      "kt_forecast",
+      "dewpoint_depression_C_forecast"
+    ],
+    "observed": [
+      "dewpoint_2m_C",
+      "temperature_2m_C",
+      "surface_pressure_hPa",
+      "total_precip_mm",
+      "ssrd_wm2",
+      "strd_wm2",
+      "kt",
+      "dewpoint_depression_C"
+    ],
+    "target": [
+      "pv_generation_mwh"
+    ]
+  },
+  "night_outlier_params": {
+    "zenith_threshold": 95,
+    "generation_threshold_mwh": 0.1
+  }
+}
