@@ -1,0 +1,44 @@
+{
+  "best_trial": 12,
+  "best_val_loss": 0.13576917350292206,
+  "best_params": {
+    "hidden_size": 64,
+    "lstm_layers": 1,
+    "attention_head_size": 4,
+    "dropout": 0.30658707681632436,
+    "hidden_continuous_size": 8,
+    "learning_rate": 0.0002727138331484171
+  },
+  "n_trials": 15,
+  "val_metrics_mwh": {
+    "MAE_MWh": 119.37822723388672,
+    "RMSE_MWh": 214.51524353027344,
+    "R2": 0.7824905514717102
+  },
+  "sequence_config": {
+    "max_encoder_length": 168,
+    "max_prediction_length": 24
+  },
+  "training_config": {
+    "batch_size": 64,
+    "max_epochs_final": 75,
+    "early_stopping_patience": 10,
+    "gradient_clip_val": 0.1,
+    "optimizer": "adam",
+    "loss": "QuantileLoss",
+    "quantiles": [
+      0.02,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.98
+    ]
+  },
+  "test_metrics_mwh": {
+    "MAE_MWh": 104.5965576171875,
+    "RMSE_MWh": 195.87315368652344,
+    "R2": 0.8464276194572449
+  }
+}

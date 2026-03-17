@@ -1,0 +1,60 @@
+{
+  "model": "nwp",
+  "best_trial": 8,
+  "best_val_loss": 0.12694261968135834,
+  "best_params": {
+    "hidden_size": 16,
+    "lstm_layers": 1,
+    "attention_head_size": 2,
+    "dropout": 0.378909295702772,
+    "hidden_continuous_size": 32,
+    "learning_rate": 0.004048966222584676
+  },
+  "n_trials": 15,
+  "val_metrics_mwh": {
+    "MAE_MWh": 151.94606018066406,
+    "RMSE_MWh": 281.6502380371094,
+    "R2": 0.8858692049980164
+  },
+  "feature_config": {
+    "known_future": [
+      "hour_sin",
+      "hour_cos",
+      "month_sin",
+      "month_cos",
+      "doy_sin",
+      "doy_cos",
+      "solar_zenith",
+      "solar_azimuth",
+      "clearsky_ghi",
+      "ssrd_wm2_forecast",
+      "temperature_2m_C_forecast",
+      "dewpoint_2m_C_forecast",
+      "surface_pressure_hPa_forecast",
+      "total_precip_mm_forecast",
+      "kt_forecast",
+      "dewpoint_depression_C_forecast"
+    ],
+    "observed": [
+      "dewpoint_2m_C",
+      "temperature_2m_C",
+      "surface_pressure_hPa",
+      "total_precip_mm",
+      "ssrd_wm2",
+      "strd_wm2",
+      "kt",
+      "dewpoint_depression_C"
+    ],
+    "n_known_future": 16,
+    "n_observed": 8
+  },
+  "sequence_config": {
+    "max_encoder_length": 168,
+    "max_prediction_length": 24
+  },
+  "test_metrics_mwh": {
+    "MAE_MWh": 116.17870330810547,
+    "RMSE_MWh": 234.80514526367188,
+    "R2": 0.8917198181152344
+  }
+}

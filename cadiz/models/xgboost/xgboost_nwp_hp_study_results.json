@@ -1,0 +1,25 @@
+{
+  "model": "xgboost_nwp",
+  "best_trial": 14,
+  "best_params": {
+    "n_estimators": 243,
+    "max_depth": 4,
+    "learning_rate": 0.03279503842793357,
+    "subsample": 0.7954208739647158,
+    "colsample_bytree": 0.6130542056199522,
+    "min_child_weight": 4,
+    "reg_alpha": 6.523527968249017e-07,
+    "reg_lambda": 1.954018533123687e-08
+  },
+  "n_trials": 15,
+  "val_metrics_mwh": {
+    "MAE_MWh": 115.83253030864793,
+    "RMSE_MWh": 205.2058093540315,
+    "R2": 0.7334426929380069
+  },
+  "test_metrics_mwh": {
+    "MAE_MWh": 128.97495092391966,
+    "RMSE_MWh": 224.08635188498064,
+    "R2": 0.7579920017594481
+  }
+}

@@ -15,14 +15,9 @@ envs/
 .idea/
 .claude
 
-# Model checkpoints and training artifacts
-caceres_analysis/models/
-cadiz_analysis/models/
-zaragoza_analysis/models/
-*.ckpt
+# training logs
 lightning_logs/
 
-# Large data files — stored on Hugging Face
-spain_total/era5_timeseries_plants/
-spain_total/era5_gridpoint_cache/
-spain_total/era5_download_errors.txt
+project.md
+report_plan.md
+stacking_ensemble_plan.md
