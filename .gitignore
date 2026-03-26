@@ -14,9 +14,20 @@ envs/
 .vscode/
 .idea/
 .claude
+.claude/
 
 # training logs
 lightning_logs/
+
+# model artifacts (large binaries, generated outputs)
+*.ckpt
+*.pkl
+**/models/*.json
+**/models/*.csv
+**/models/**/*.json
+**/models/**/*.csv
+**/models/**/*.pkl
+**/models/**/*.ckpt
 
 project.md
 report_plan.md
