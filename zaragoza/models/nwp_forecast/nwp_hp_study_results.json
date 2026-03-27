@@ -52,5 +52,10 @@
   "sequence_config": {
     "max_encoder_length": 168,
     "max_prediction_length": 24
+  },
+  "test_metrics_mwh": {
+    "MAE_MWh": 86.88161542198931,
+    "RMSE_MWh": 160.62340691815066,
+    "R2": 0.8969499451228297
   }
 }

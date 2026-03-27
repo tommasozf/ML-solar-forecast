@@ -1,25 +1,27 @@
 {
   "model": "xgboost_nwp",
-  "best_trial": 7,
+  "best_trial": 9,
   "best_params": {
-    "n_estimators": 973,
+    "n_estimators": 626,
     "max_depth": 4,
-    "learning_rate": 0.012860889953196755,
-    "subsample": 0.6524177979958697,
-    "colsample_bytree": 0.9445476940880573,
-    "min_child_weight": 1,
-    "reg_alpha": 5.360245648839925e-06,
-    "reg_lambda": 3.4827178499122144e-05
+    "learning_rate": 0.013403040202265425,
+    "subsample": 0.7249673810909028,
+    "colsample_bytree": 0.6153720985597237,
+    "min_child_weight": 2,
+    "reg_alpha": 6.880822930148935e-05,
+    "reg_lambda": 7.829727297742804e-07
   },
   "n_trials": 15,
   "val_metrics_mwh": {
-    "MAE_MWh": 90.91293601871723,
-    "RMSE_MWh": 165.11337170940973,
-    "R2": 0.8715177981800034
+    "MAE_MWh": 93.31725778796792,
+    "RMSE_MWh": 168.43195982001555,
+    "R2": 0.8663012082600102,
+    "nRMSE_pct": 50.16161537352723
   },
   "test_metrics_mwh": {
-    "MAE_MWh": 88.97358550887176,
-    "RMSE_MWh": 163.65622314442285,
-    "R2": 0.8930217203994454
+    "MAE_MWh": 89.75801062901814,
+    "RMSE_MWh": 165.46505944145594,
+    "R2": 0.8906438630798209,
+    "nRMSE_pct": 49.27802703435507
   }
 }
