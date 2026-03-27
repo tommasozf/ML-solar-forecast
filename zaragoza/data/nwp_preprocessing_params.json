@@ -59,7 +59,7 @@
     "dewpoint_2m_C_forecast": 7.0888171899382595,
     "surface_pressure_hPa_forecast": 961.2295447817213,
     "total_precip_mm_forecast": 0.035463378187438166,
-    "kt_forecast": 0.416499005689992,
+    "kt_forecast": 0.4493235369410265,
     "dewpoint_depression_C_forecast": 8.705840236885372
   },
   "train_stds": {
@@ -79,7 +79,7 @@
     "dewpoint_2m_C_forecast": 5.595160555374464,
     "surface_pressure_hPa_forecast": 6.787161203490534,
     "total_precip_mm_forecast": 0.17837932202238022,
-    "kt_forecast": 0.4726045255599389,
+    "kt_forecast": 0.5106569860989163,
     "dewpoint_depression_C_forecast": 5.9753113181206015
   },
   "target_mean": 335.7785800273598,

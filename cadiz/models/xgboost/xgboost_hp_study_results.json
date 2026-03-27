@@ -1,25 +1,25 @@
 {
   "model": "xgboost_standard",
-  "best_trial": 9,
+  "best_trial": 14,
   "best_params": {
-    "n_estimators": 394,
-    "max_depth": 4,
-    "learning_rate": 0.0200506023083046,
-    "subsample": 0.7885513294284736,
-    "colsample_bytree": 0.9615782074201343,
+    "n_estimators": 420,
+    "max_depth": 3,
+    "learning_rate": 0.010625438429554832,
+    "subsample": 0.7461071462752971,
+    "colsample_bytree": 0.8765657542734937,
     "min_child_weight": 3,
-    "reg_alpha": 3.586807833136858e-07,
-    "reg_lambda": 3.009294236903653e-08
+    "reg_alpha": 0.0003508659642212687,
+    "reg_lambda": 6.1947911968637
   },
   "n_trials": 15,
   "val_metrics_mwh": {
-    "MAE_MWh": 117.22337121067784,
-    "RMSE_MWh": 206.98575494028756,
-    "R2": 0.7287984266302109
+    "MAE_MWh": 124.95396349847559,
+    "RMSE_MWh": 217.74217810992516,
+    "R2": 0.6998789790373963
   },
   "test_metrics_mwh": {
-    "MAE_MWh": 132.42941609009452,
-    "RMSE_MWh": 228.86676700596558,
-    "R2": 0.7475563933864513
+    "MAE_MWh": 146.60099608943773,
+    "RMSE_MWh": 246.0243965042727,
+    "R2": 0.7082873537142549
   }
 }

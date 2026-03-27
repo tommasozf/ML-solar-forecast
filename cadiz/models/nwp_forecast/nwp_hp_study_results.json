@@ -1,20 +1,20 @@
 {
   "model": "nwp",
-  "best_trial": 0,
-  "best_val_loss": 0.2360095977783203,
+  "best_trial": 10,
+  "best_val_loss": 0.24434080719947815,
   "best_params": {
-    "hidden_size": 32,
+    "hidden_size": 64,
     "lstm_layers": 1,
     "attention_head_size": 4,
-    "dropout": 0.2803345035229627,
-    "hidden_continuous_size": 32,
-    "learning_rate": 0.004622589001020831
+    "dropout": 0.31222605509347556,
+    "hidden_continuous_size": 8,
+    "learning_rate": 0.00011952270129143879
   },
   "n_trials": 15,
   "val_metrics_mwh": {
-    "MAE_MWh": 108.4995346069336,
-    "RMSE_MWh": 193.74188232421875,
-    "R2": 0.7614725828170776
+    "MAE_MWh": 115.51329684984734,
+    "RMSE_MWh": 207.12669813248235,
+    "R2": 0.7284289613067182
   },
   "feature_config": {
     "known_future": [
@@ -51,5 +51,10 @@
   "sequence_config": {
     "max_encoder_length": 168,
     "max_prediction_length": 24
+  },
+  "test_metrics_mwh": {
+    "MAE_MWh": 128.70800413413482,
+    "RMSE_MWh": 227.58227054014955,
+    "R2": 0.7503820807928037
   }
 }
