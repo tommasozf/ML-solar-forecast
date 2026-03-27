@@ -2,7 +2,7 @@
 
 Machine learning models for day-ahead solar power generation forecasting across three Spanish provinces, using hourly ESIOS measured generation data and ERA5 reanalysis weather data.
 
-![](image.png)
+![](province_map.png)
 
 ## Provinces
 
