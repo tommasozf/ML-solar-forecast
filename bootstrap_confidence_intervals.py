@@ -31,17 +31,20 @@ REGION_DISPLAY = {'caceres': 'Cáceres', 'cadiz': 'Cádiz', 'zaragoza': 'Zaragoz
 
 MODEL_CONFIGS = {
     'TFT Standard': {
-        'pred_csv': 'models/standard/val_predictions.csv',  # will use test when available
+        'test_csv': 'models/standard/test_predictions.csv',
+        'val_csv': 'models/standard/val_predictions.csv',
         'json_path': 'models/standard/hp_study_results.json',
         'params_json': 'data/preprocessing_params.json',
     },
     'TFT Perfect': {
-        'pred_csv': 'models/perfect_forecast/val_predictions_pf.csv',
+        'test_csv': 'models/perfect_forecast/test_predictions.csv',
+        'val_csv': 'models/perfect_forecast/val_predictions_pf.csv',
         'json_path': 'models/perfect_forecast/hp_study_results_pf.json',
         'params_json': 'data/preprocessing_params.json',
     },
     'TFT NWP': {
-        'pred_csv': 'models/nwp_forecast/nwp_val_predictions.csv',
+        'test_csv': 'models/nwp_forecast/nwp_test_predictions.csv',
+        'val_csv': 'models/nwp_forecast/nwp_val_predictions.csv',
         'json_path': 'models/nwp_forecast/nwp_hp_study_results.json',
         'params_json': 'data/preprocessing_params.json',
     },
@@ -51,6 +54,12 @@ MODEL_CONFIGS = {
     },
     'XGBoost NWP': {
         'json_path': 'models/xgboost/xgboost_nwp_hp_study_results.json',
+        'params_json': 'data/preprocessing_params.json',
+    },
+    'Stacking': {
+        'test_csv': 'models/stacking_predictions_test.csv',
+        'stacking': True,
+        'json_path': 'models/stacking_results.json',
         'params_json': 'data/preprocessing_params.json',
     },
 }
@@ -99,44 +108,46 @@ def bootstrap_metrics(actual, predicted, target_mean, n_boot=N_BOOTSTRAP, ci=CI_
 
 def load_predictions(region, model_name, config):
     """Try to load test predictions; fall back to val predictions."""
-    json_path = os.path.join(region, config['json_path'])
     params_path = os.path.join(region, config['params_json'])
 
     with open(params_path) as f:
         pp = json.load(f)
     target_mean = pp['target_mean']
 
-    with open(json_path) as f:
-        data = json.load(f)
+    # Stacking: special format
+    if config.get('stacking'):
+        csv_path = os.path.join(region, config.get('test_csv', ''))
+        if os.path.exists(csv_path):
+            df = pd.read_csv(csv_path)
+            return df['actual_mwh'].values, df['ensemble_pred_mwh'].values, target_mean
+        return None, None, target_mean
 
-    # Use test metrics if available (actual/predicted arrays in the JSON)
-    test_m = data.get('test_metrics_mwh')
-    val_m = data.get('val_metrics_mwh')
-
-    # For TFT models, try loading prediction CSVs
-    if 'pred_csv' in config:
-        csv_path = os.path.join(region, config['pred_csv'])
+    # Try test CSV first, then fall back to val CSV
+    for csv_key in ['test_csv', 'val_csv']:
+        csv_path_rel = config.get(csv_key)
+        if not csv_path_rel:
+            continue
+        csv_path = os.path.join(region, csv_path_rel)
         if os.path.exists(csv_path):
             df = pd.read_csv(csv_path)
             if 'actual_mwh' in df.columns and 'predicted_mwh' in df.columns:
                 actual = df['actual_mwh'].values
                 predicted = df['predicted_mwh'].values
 
-                # Handle flattened overlapping windows
-                n_expected_val = 4344  # val set size
-                if len(actual) > n_expected_val * 2:
-                    # Flattened windows — aggregate per-timestep
+                # Handle flattened overlapping windows (val CSVs only)
+                n_expected = 4416 if 'test' in csv_key else 4344
+                if len(actual) > n_expected * 2:
                     n_windows = len(actual) // 24
                     pred_arr = predicted.reshape(n_windows, 24)
                     act_arr = actual.reshape(n_windows, 24)
 
-                    agg_pred = np.zeros(n_expected_val)
-                    agg_actual = np.zeros(n_expected_val)
-                    agg_count = np.zeros(n_expected_val)
+                    agg_pred = np.zeros(n_expected)
+                    agg_actual = np.zeros(n_expected)
+                    agg_count = np.zeros(n_expected)
                     for i in range(n_windows):
                         for h in range(24):
                             t = i + h
-                            if t < n_expected_val:
+                            if t < n_expected:
                                 agg_pred[t] += pred_arr[i, h]
                                 agg_actual[t] += act_arr[i, h]
                                 agg_count[t] += 1
@@ -146,10 +157,10 @@ def load_predictions(region, model_name, config):
                     actual = agg_actual[mask]
                     predicted = agg_pred[mask]
 
+                source = 'TEST' if 'test' in csv_key else 'VAL'
+                print(f'    [{source}] {csv_path} ({len(actual)} samples)')
                 return actual, predicted, target_mean
 
-    # For XGBoost or if CSV not available, we can't bootstrap
-    # (no per-sample predictions saved — only aggregate metrics)
     return None, None, target_mean
 
 
