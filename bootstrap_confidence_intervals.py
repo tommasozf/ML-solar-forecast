@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 
 N_BOOTSTRAP = 10_000
 CI_LEVEL = 0.95
-SEED = 42
+SEED = 420
 
 REGIONS = ['caceres', 'cadiz', 'zaragoza']
 REGION_DISPLAY = {'caceres': 'Cáceres', 'cadiz': 'Cádiz', 'zaragoza': 'Zaragoza'}
