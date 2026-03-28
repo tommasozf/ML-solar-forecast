@@ -2,7 +2,7 @@
 
 Machine learning models for day-ahead solar power generation forecasting across three Spanish provinces, using hourly ESIOS measured generation data and ERA5 reanalysis weather data.
 
-![](province_map.png)
+![](figures/province_map.png)
 
 ## Provinces
 
@@ -30,19 +30,29 @@ Six model variants are trained per province:
 
 ## Project Structure
 
-```
+```text
 ML-solar-forecast/
-|-- caceres/                        # Caceres province analysis
-|-- cadiz/                          # Cadiz province analysis
-|-- zaragoza/                       # Zaragoza province analysis
-|-- cross_province_comparison.ipynb # Cross-province results comparison
-|-- download_era5.py                # ERA5 data download script
+|-- regional_analysis/              # Per-province modelling pipelines
+|   |-- caceres/                    # Caceres (Extremadura)
+|   |-- cadiz/                      # Cadiz (Andalucia)
+|   |-- zaragoza/                   # Zaragoza (Aragon)
+|   |-- zaragoza_analysis/          # Additional Zaragoza stacking analysis
+|-- miscellaneous/                  # Utility scripts and cross-province notebooks
+|   |-- cross_province_comparison.ipynb   # Cross-province results comparison
+|   |-- province_climate_comparison.ipynb # Climate characterization notebook
+|   |-- generate_comparison_figs.py       # Generate cross-province figures
+|   |-- bootstrap_confidence_intervals.py # Bootstrap CIs on test metrics
+|   |-- figure_style.py                   # Unified matplotlib style module
+|   |-- download_era5.py                  # ERA5 data download script
+|-- figures/                        # All output figures (PNG + PDF)
+|-- README.md
 |-- environment.yml                 # Conda environment specification
+|-- report.pdf
 ```
 
 Each province directory follows the same pipeline structure:
 
-```
+```text
 <province>/
 |-- 01_data_assembly.ipynb          # Assemble ESIOS + ERA5 raw data
 |-- 02_eda.ipynb                    # Exploratory data analysis
@@ -63,7 +73,7 @@ Each province directory follows the same pipeline structure:
 |   |-- perfect_forecast/           # TFT Perfect Forecast checkpoint + HP results
 |   |-- nwp_forecast/               # TFT NWP checkpoint + HP results
 |   |-- xgboost/                    # XGBoost HP study results
-|-- lightning_logs/                  # PyTorch Lightning TensorBoard logs (git-ignored)
+|-- lightning_logs/                 # PyTorch Lightning TensorBoard logs (git-ignored)
 ```
 
 ## Data Sources
