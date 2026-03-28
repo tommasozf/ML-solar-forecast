@@ -10,11 +10,11 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-PROJECT_ROOT = os.getcwd()
+PROJECT_ROOT = os.path.abspath(os.path.join(os.getcwd(), '..'))
 PROVINCES = {
-    'Cáceres':  {'dir': 'caceres',  'capacity_mwp': 2463.01},
-    'Cádiz':    {'dir': 'cadiz',    'capacity_mwp': 714.60},
-    'Zaragoza': {'dir': 'zaragoza', 'capacity_mwp': 462.40},
+    'Cáceres':  {'dir': 'regional_analysis/caceres',  'capacity_mwp': 2463.01},
+    'Cádiz':    {'dir': 'regional_analysis/cadiz',    'capacity_mwp': 714.60},
+    'Zaragoza': {'dir': 'regional_analysis/zaragoza', 'capacity_mwp': 462.40},
 }
 
 MODELS_JSON = {
@@ -91,7 +91,7 @@ ax.set_xticklabels(prov_names)
 ax.set_ylabel('nRMSE (% of peak generation)')
 ax.set_title('Test-set nRMSE by Province and Model Variant')
 ax.legend(loc='upper left', ncol=2, fontsize=8, framealpha=0.9)
-save_fig(fig, 'fig_nrmse_by_province')
+save_fig(fig, 'fig_nrmse_by_province', folder='../figures')
 plt.close()
 print('nRMSE figure: DONE')
 
@@ -160,6 +160,6 @@ axes[1].axhline(0, color='black', lw=0.5)
 fig.suptitle('Model Comparison: Feature Effect and Architecture Effect',
              fontsize=13, fontweight='bold', y=1.02)
 plt.tight_layout()
-save_fig(fig, 'fig_delta_r2_pair')
+save_fig(fig, 'fig_delta_r2_pair', folder='../figures')
 plt.close()
 print('Delta R² pair: DONE')

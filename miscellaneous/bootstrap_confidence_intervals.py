@@ -10,7 +10,7 @@ Usage:
     python bootstrap_confidence_intervals.py
 
 Output:
-    - figures/fig_bootstrap_ci.png  (R² with 95% CI error bars)
+    - ../figures/fig_bootstrap_ci.png  (R² with 95% CI error bars)
     - prints full CI table to stdout
 """
 
@@ -108,7 +108,7 @@ def bootstrap_metrics(actual, predicted, target_mean, n_boot=N_BOOTSTRAP, ci=CI_
 
 def load_predictions(region, model_name, config):
     """Try to load test predictions; fall back to val predictions."""
-    params_path = os.path.join(region, config['params_json'])
+    params_path = os.path.join('../regional_analysis', region, config['params_json'])
 
     with open(params_path) as f:
         pp = json.load(f)
@@ -116,7 +116,7 @@ def load_predictions(region, model_name, config):
 
     # Stacking: special format
     if config.get('stacking'):
-        csv_path = os.path.join(region, config.get('test_csv', ''))
+        csv_path = os.path.join('../regional_analysis', region, config.get('test_csv', ''))
         if os.path.exists(csv_path):
             df = pd.read_csv(csv_path)
             return df['actual_mwh'].values, df['ensemble_pred_mwh'].values, target_mean
@@ -127,7 +127,7 @@ def load_predictions(region, model_name, config):
         csv_path_rel = config.get(csv_key)
         if not csv_path_rel:
             continue
-        csv_path = os.path.join(region, csv_path_rel)
+        csv_path = os.path.join('../regional_analysis', region, csv_path_rel)
         if os.path.exists(csv_path):
             df = pd.read_csv(csv_path)
             if 'actual_mwh' in df.columns and 'predicted_mwh' in df.columns:
@@ -165,7 +165,7 @@ def load_predictions(region, model_name, config):
 
 
 def main():
-    os.makedirs('figures', exist_ok=True)
+    os.makedirs('../figures', exist_ok=True)
 
     all_results = []
     print("=" * 90)
@@ -256,13 +256,13 @@ def main():
     ax.grid(axis='y', alpha=0.3)
 
     plt.tight_layout()
-    plt.savefig('figures/fig_bootstrap_ci.png', dpi=200, bbox_inches='tight')
-    plt.savefig('figures/fig_bootstrap_ci.pdf', bbox_inches='tight')
-    print(f"\nFigure saved: figures/fig_bootstrap_ci.png")
+    plt.savefig('../figures/fig_bootstrap_ci.png', dpi=200, bbox_inches='tight')
+    plt.savefig('../figures/fig_bootstrap_ci.pdf', bbox_inches='tight')
+    print(f"\nFigure saved: ../figures/fig_bootstrap_ci.png")
 
     # Save results to JSON
-    df.to_json('figures/bootstrap_ci_results.json', orient='records', indent=2)
-    print(f"Results saved: figures/bootstrap_ci_results.json")
+    df.to_json('../figures/bootstrap_ci_results.json', orient='records', indent=2)
+    print(f"Results saved: ../figures/bootstrap_ci_results.json")
 
 
 if __name__ == '__main__':
