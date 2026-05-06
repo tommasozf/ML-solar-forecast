@@ -36,7 +36,6 @@ module purge
 module load 2025
 module load GCCcore/13.2.0
 module load Python/3.11.5-GCCcore-13.2.0   # same version used in setup_env_ada.sh
-module load CUDA/12.4.0
 
 source "${HOME}/solar-venv/bin/activate"
 echo "Python: $(python --version) | $(which python)"

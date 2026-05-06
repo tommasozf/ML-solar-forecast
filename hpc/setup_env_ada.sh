@@ -19,8 +19,7 @@ VENV_DIR="${HOME}/solar-venv"
 module purge
 module load 2025
 module load GCCcore/13.2.0
-module load Python/3.11.5-GCCcore-13.2.0   # check: module avail Python
-module load CUDA/12.4.0                      # check: module avail CUDA
+module load Python/3.11.5-GCCcore-13.2.0
 
 # System Python is 3.9 — must use the module version
 PY_VERSION=$(python3 -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')")
