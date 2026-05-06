@@ -1,0 +1,14 @@
+Python: Python 3.11.5 | /scistor/guest/tza100/solar-venv/bin/python
+==============================
+Job:        1019806
+Array task: 2
+Province:   zaragoza
+Model type: nwp_forecast
+Storage:    sqlite:////net/sys/pscst201/IT-ITVO-HPC@ada-nodes/guest/tza100/solar/TFT-solar-forecast/hpc/studies/tft_zaragoza_nwp_forecast.db
+Trials/worker: 10
+Max epochs:    15
+==============================
+Worker starting: province=zaragoza model_type=nwp_forecast n_trials=10 max_epochs=15
+CUDA: True
+GPU: NVIDIA A30
+Worker 2 finished.

@@ -1,0 +1,11 @@
+Python: Python 3.11.5 | /scistor/guest/tza100/solar-venv/bin/python
+==============================
+Job:        1019710
+Array task: 0
+Province:   caceres
+Model type: nwp
+Storage:    sqlite:////net/sys/pscst201/IT-ITVO-HPC@ada-nodes/guest/tza100/solar/TFT-solar-forecast/hpc/studies/xgb_caceres_nwp.db
+Trials/worker: 40
+==============================
+XGB worker: province=caceres model_type=nwp n_trials=40
+Worker 0 finished.

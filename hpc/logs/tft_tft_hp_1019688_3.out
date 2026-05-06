@@ -1,0 +1,14 @@
+Python: Python 3.11.5 | /scistor/guest/tza100/solar-venv/bin/python
+==============================
+Job:        1019719
+Array task: 3
+Province:   caceres
+Model type: standard
+Storage:    sqlite:////net/sys/pscst201/IT-ITVO-HPC@ada-nodes/guest/tza100/solar/TFT-solar-forecast/hpc/studies/tft_caceres_standard.db
+Trials/worker: 10
+Max epochs:    15
+==============================
+Worker starting: province=caceres model_type=standard n_trials=10 max_epochs=15
+CUDA: True
+GPU: NVIDIA A30
+Worker 3 finished.

@@ -1,0 +1,11 @@
+Python: Python 3.11.5 | /scistor/guest/tza100/solar-venv/bin/python
+==============================
+Job:        1019717
+Array task: 3
+Province:   cadiz
+Model type: standard
+Storage:    sqlite:////net/sys/pscst201/IT-ITVO-HPC@ada-nodes/guest/tza100/solar/TFT-solar-forecast/hpc/studies/xgb_cadiz_standard.db
+Trials/worker: 40
+==============================
+XGB worker: province=cadiz model_type=standard n_trials=40
+Worker 3 finished.
