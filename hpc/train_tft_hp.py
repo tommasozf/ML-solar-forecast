@@ -92,7 +92,7 @@ TARGET = "pv_generation_mwh"
 
 def load_data(province: str, model_type: str, base_dir: str):
     cfg = MODEL_CONFIGS[model_type]
-    data_dir = os.path.join(base_dir, province, "data")
+    data_dir = os.path.join(base_dir, "regional_analysis", province, "data")
 
     train_df = pd.read_csv(
         os.path.join(data_dir, cfg["train_csv"]),

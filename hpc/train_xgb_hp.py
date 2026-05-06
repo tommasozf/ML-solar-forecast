@@ -30,7 +30,7 @@ DROP_COLS = {"datetime_utc", "time_idx", "group_id", TARGET}
 
 
 def load_xy(province: str, model_type: str, base_dir: str):
-    data_dir = os.path.join(base_dir, province, "data")
+    data_dir = os.path.join(base_dir, "regional_analysis", province, "data")
 
     if model_type == "nwp":
         train_csv, val_csv = "nwp_train_processed.csv", "nwp_val_processed.csv"

@@ -99,7 +99,7 @@ def main():
             print(f"    params: {s['best_params']}")
 
             if not args.dry_run:
-                model_dir = os.path.join(base_dir, prov, "models", TFT_MODEL_DIR[mtype])
+                model_dir = os.path.join(base_dir, "regional_analysis", prov, "models", TFT_MODEL_DIR[mtype])
                 os.makedirs(model_dir, exist_ok=True)
                 out_path = os.path.join(model_dir, "hp_study_results.json")
                 existing = {}
@@ -134,7 +134,7 @@ def main():
             print(f"    params: {s['best_params']}")
 
             if not args.dry_run:
-                model_dir = os.path.join(base_dir, prov, "models", XGB_MODEL_DIR.get(mtype, "xgboost"))
+                model_dir = os.path.join(base_dir, "regional_analysis", prov, "models", XGB_MODEL_DIR.get(mtype, "xgboost"))
                 os.makedirs(model_dir, exist_ok=True)
                 out_path = os.path.join(model_dir, "hp_study_results.json")
                 existing = {}
