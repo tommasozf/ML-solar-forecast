@@ -1,15 +1,18 @@
 {
-  "best_trial": 12,
-  "best_val_loss": 0.13576917350292206,
+  "best_trial": 90,
+  "best_val_loss": 0.02057,
   "best_params": {
-    "hidden_size": 64,
-    "lstm_layers": 1,
+    "hidden_size": 128,
+    "lstm_layers": 2,
     "attention_head_size": 4,
-    "dropout": 0.30658707681632436,
-    "hidden_continuous_size": 8,
-    "learning_rate": 0.0002727138331484171
+    "dropout": 0.1680701328756496,
+    "hidden_continuous_size": 64,
+    "learning_rate": 0.0007797393990411233,
+    "batch_size": 32,
+    "gradient_clip_val": 0.925987437066573,
+    "reduce_on_plateau_patience": 3
   },
-  "n_trials": 15,
+  "n_trials": 98,
   "val_metrics_mwh": {
     "MAE_MWh": 119.37822723388672,
     "RMSE_MWh": 214.51524353027344,
@@ -40,5 +43,6 @@
     "MAE_MWh": 103.76748083745852,
     "RMSE_MWh": 193.74561183472503,
     "R2": 0.8500680081725565
-  }
+  },
+  "source": "hpc_logs"
 }

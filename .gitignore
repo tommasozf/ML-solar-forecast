@@ -32,3 +32,5 @@ lightning_logs/
 project.md
 report_plan.md
 stacking_ensemble_plan.md
+
+hpc/logs
